@@ -1,6 +1,6 @@
 <?php
 
-    // Un article en vente
+    // Une lunette
     class Lunette {
         public $intitulé;// Nom de l'article
         public $compleinfo;//Complépments d'info
