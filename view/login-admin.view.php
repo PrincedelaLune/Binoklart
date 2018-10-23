@@ -8,7 +8,7 @@
     <form method="post" action="../controler/login.ctrl.php">
       <p>
         <label for="pseudo">Votre pseudo</label> : <input type="text" name="pseudo" id="pseudo"/>
-        <label for="motdepasse">Mot de passe</label> : <input type="password" name="motdepasse" id="motdepasse"/>
+        <label for="pass">Mot de passe</label> : <input type="password" name="pass" id="pass"/>
       </p>
       <p>
         <input type="submit" value="Envoyer" />

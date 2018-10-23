@@ -6,3 +6,8 @@ reference INTEGER,
 categorie STRING,
 photo STRING
 );
+
+CREATE TABLE login (
+  login STRING,
+  motdp STRING
+);
