@@ -100,6 +100,18 @@
 
         }
 
+//////////////////////////////////////////////////////////////
+//Acces aux logins/mots de passes
+//////////////////////////////////////////////////////////////
+
+        function getMDP($login){
+          $sql="SELECT motdp where login =$login";
+        }
+
+        function getLogins(){
+
+        }
+
     }
     $article = new DAO();
     $m = $article->getN(67359894,5);
