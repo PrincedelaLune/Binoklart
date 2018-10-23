@@ -18,7 +18,7 @@
             $database='sqlite:../data/lunette.db';
             try{
             $this->db = new PDO($database);
-            }catch(PDOEXCEPTION $e){
+          }catch(PDOEXCEPTION $e){
               var_dump($e);
             }
 
@@ -68,39 +68,7 @@
 
 
         }
-
-        // Acces à l'article suivant l'article dans l'ordre des références
-        // Cette méthode ne rend qu'un objet de la classe Article
-        function next(Article $a) {
-
-
-        }
-
-        // Acces aux n articles qui précèdent de $size l'article $a dans l'ordre des références
-        function prevN(Article $a,$n) {
-
-
-        }
-
-
-
-        // Acces à une catégorie
-        // Retourne un objet de la classe Categorie connaissant son identifiant
-        function getCat($id) {
-
-        }
-
-
-
-
-        // Acces au n articles à partir de la reférence $ref de la catégorie indiquée
-        // Retourne une table d'objets de la classe Article
-        function getNCateg($ref,$n,$categorie) {
-
-
-        }
-
-    }
+        
     $article = new DAO();
     $m = $article->getN(67359894,5);
     ?>
