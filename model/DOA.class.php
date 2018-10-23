@@ -65,10 +65,21 @@
             $res[]=$music->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'article');
             }
             return $res;
+        }
+      
+      //////////////////////////////////////////////////////////////
+      //Acces aux logins/mots de passes
+      //////////////////////////////////////////////////////////////
 
+        function getMDP($login){
+          $sql="SELECT motdp where login =$login";
+        }
+
+        function getLogins(){
 
         }
-        
+
+
     $article = new DAO();
     $m = $article->getN(67359894,5);
     ?>
