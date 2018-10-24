@@ -30,8 +30,8 @@
         // Retourne une table d'objets de type Categorie
         function getAllCat() {
             $sql="SELECT * FROM categorie";
-            $music=$this->db->query($sql);
-            $res=$music->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Categorie');
+            $cat=$this->db->query($sql);
+            $res=$cat->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Categorie');
             return $res;
         }
 
