@@ -7,6 +7,10 @@ categorie STRING,
 photo STRING
 );
 
+CREATE TABLE categorie{
+  
+}
+
 CREATE TABLE login (
   login STRING,
   motdp STRING
