@@ -1,10 +1,13 @@
 CREATE TABLE lunette (
-intitulé STRING,
-compleinfo STRING,
-prix FLOAT,
-reference INTEGER,
-categorie STRING,
-photo STRING
+Numero INTEGER,
+Marque STRING,
+Modèle STRING,
+Genre CHARACTER,
+Style STRING,
+Forme STRING,
+Couleur STRING,
+Matériaux STRING,
+Prix INTEGER
 );
 
 CREATE TABLE login (
