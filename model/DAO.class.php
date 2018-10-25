@@ -30,20 +30,12 @@
             $res=$formes->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Forme');
             return $res;
         }
-      }
-
-
-<<<<<<< HEAD
-
 
       function firstN($n) {
           $sql="SELECT * FROM lunette LIMIT $n";
           $lunette=$this->db->query($sql);
           $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
           return $res;
-
-
-
       }
 
       function getN($ref,$n) {
@@ -58,6 +50,5 @@
           }
           return $res;
       }
-=======
->>>>>>> d48a321fa24f921fd3bb474165545cdc5200cff1
+    }
     ?>
