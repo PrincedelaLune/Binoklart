@@ -25,13 +25,13 @@
 
 
         }
-        // Accès à toutes les catégories
-        // Retourne une table d'objets de type Categorie
+       
         function getAllForme() {
             $sql="SELECT * FROM forme";
             $formes=$this->db->query($sql);
             $res=$formes->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Forme');
             return $res;
         }
-      }
+      
+
     ?>
