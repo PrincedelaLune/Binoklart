@@ -1,19 +1,20 @@
 CREATE TABLE lunette
 (
-  Numero INTEGER,
-  Marque STRING,
-  Modèle STRING,
-  Genre CHARACTER,
-  Style STRING,
-  Forme STRING,
-  Couleur STRING,
-  Matériaux STRING,
-  Prix INTEGER
+  numero INTEGER,
+  marque STRING,
+  modèle STRING,
+  genre CHARACTER,
+  style STRING,
+  forme INTEGER,
+  couleur STRING,
+  materiaux STRING,
+  prix INTEGER,
+  FOREIGN KEY(forme) REFERENCES forme(id)
 );
 
-CREATE TABLE categorie
+CREATE TABLE forme
 (
-  Id STRING,
+  Id INTEGER PRIMARY KEY,
   Nom STRING
 );
 
