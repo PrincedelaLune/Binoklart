@@ -1,9 +1,7 @@
 <?php
-
 class forme{
-  Id STRING,
-  Nom STRING
+  public $id;
+  public $nom;
 };
-
 
 ?>
