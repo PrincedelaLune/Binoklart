@@ -12,15 +12,15 @@
 
   <body>
     <div id="container">
-  <!-- code d'apparition d'une paire------------------------------------------->
+  <!-- code d'apparition d'une paire-------------------------------------------
       <div class="paires">
         <img src ="img/paires/44.png" alt="logo"/>
         <a class="lienref"><p>La référence</p></a>
       </div>
-  <!-- code d'apparition d'une paire------------------------------------------->
+  -- code d'apparition d'une paire------------------------------------------->
   <?php
 
-    foreach ($lunettes as $key => $value) {
+    foreach ($lunettes as $value) {
       echo "<div class=\"paires\">
               <img src =\"img/paires/".$value->numero."png\" alt=".$value->modele."/>
               <a class=\"lienref\"><p>".$value->modele."</p></a>
