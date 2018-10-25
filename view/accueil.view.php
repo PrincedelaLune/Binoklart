@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <title>Binokl'ART</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="accueil.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="accueil.style.css" />
   </head>
 
   <header>
@@ -35,4 +35,10 @@
 
     </div>
   </body>
+
+  <footer>
+    <p> </p>
+    <a id="admin" href="lesite.fr/admin" title="admin"><p>ADMIN</p></a>
+  </footer>
+
 </html>

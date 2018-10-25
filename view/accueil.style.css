@@ -1,17 +1,32 @@
+/*------ HEADER -----*/
 header {
   margin: auto;
   padding: 10px;
   display: flex;
 }
 
+#logo {
+  width: 80px;
+  height: 80px;
+  margin: 15px 20px 0 33%;
+}
+
+h1 {
+  font-family: verdana;
+  font-size: 3em;
+}
+
+/*------ BODY -----*/
 body {
-    width: 90%;
+    width: 100%;
     margin: auto;
     font-family: sans-serif;
     background-image: url("img/fond.png");
 }
 
 #container {
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.6);
@@ -44,17 +59,6 @@ body {
   height: 100%;
 }
 
-#logo {
-  width: 80px;
-  height: 80px;
-  margin: 15px 20px 0 33%;
-}
-
-h1 {
-  font-family: verdana;
-  font-size: 3em;
-}
-
 .liencat {
   position: absolute;
   top: 50%;
@@ -66,9 +70,51 @@ h1 {
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
+  color: black;
+}
+
+a.liencat:link {
+  text-decoration: none;
+}
+
+a.liencat:hover {
+  background-color: rgba(196, 10, 10, 0.8);
+  color: white;
 }
 
 #lientoutes {
   top: 25%;
   left: 39%;
+}
+
+a#lientoutes:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/*------ FOOTER -----*/
+footer {
+    text-align: right;
+    position: relative;
+}
+
+#admin {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 10%;
+  right: 9.5%;
+  font-size: 0.8em;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+a#admin:link {
+  text-decoration: none;
+}
+
+a#admin:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
 }
