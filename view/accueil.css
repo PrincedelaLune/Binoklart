@@ -11,13 +11,6 @@ body {
     background-image: url("img/fond.png");
 }
 
-footer {
-  margin: 0;
-  padding: 10px;
-  background-color: white;
-}
-
-
 #container {
   display: flex;
   flex-wrap: wrap;
@@ -55,10 +48,6 @@ footer {
   width: 80px;
   height: 80px;
   margin: 15px 20px 0 33%;
-}
-
-.divacc {
-  display:
 }
 
 h1 {
