@@ -1,5 +1,5 @@
 <?php
-class forme{
+class Forme{
   public $id;
   public $nom;
 };
