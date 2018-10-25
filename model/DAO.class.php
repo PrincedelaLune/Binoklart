@@ -33,6 +33,7 @@
       }
 
 
+<<<<<<< HEAD
 
 
       function firstN($n) {
@@ -57,4 +58,6 @@
           }
           return $res;
       }
+=======
+>>>>>>> d48a321fa24f921fd3bb474165545cdc5200cff1
     ?>

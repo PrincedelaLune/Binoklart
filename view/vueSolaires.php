@@ -12,12 +12,13 @@
 
   <body>
     <div id="container">
-  <!-- code d'apparition d'une paire-->
+  <!-- code d'apparition d'une paire------------------------------------------->
       <div class="paires">
         <img src ="img/paires/44.png" aalt="logo"/>
         <a class="lienref"><p>La référence</p></a>
       </div>
-
+  <!-- code d'apparition d'une paire------------------------------------------->
+  
 
     </div>
   </body>
