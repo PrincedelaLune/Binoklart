@@ -11,12 +11,17 @@
   </header>
 
   <body>
+
     <div id="containerPaires">
   <!-- code d'apparition d'une paire html------------------------------------------->
+
+    <div id="container">
+  <!-- code d'apparition d'une paire-------------------------------------------
       <div class="paires">
         <img src ="img/paires/44.png" alt="logo"/>
         <a class="lienref"><p>La référence</p></a>
       </div>
+
   <!-- code d'apparition d'une paire------------------------------------------->
       <?php
 
@@ -50,8 +55,15 @@
 
       <p class="nomAttribut">Hervé</p><br>
         <input class="attribut" type="checkbox" name="herve" value="oui"> Approuvé par Hervé<br>
+  -- code d'apparition d'une paire------------------------------------------->
+  <?php
 
-
+    foreach ($lunettes as $value) {
+      echo "<div class=\"paires\">
+              <img src =\"img/paires/".$value->numero."png\" alt=".$value->modele."/>
+              <a class=\"lienref\"><p>".$value->modele."</p></a>
+            </div>\n\n";
+    }
     </div>
   </body>
 

@@ -7,6 +7,6 @@
   $nbItem = (isset($_GET['nbItem']))?$_GET['nbItem']:15;
 
   $lunettes = $dao->getN($firstId,$nbItem);
-
+  include("../view/vueProduits.view.php");
 
 ?>
