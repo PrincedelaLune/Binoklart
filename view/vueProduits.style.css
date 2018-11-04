@@ -1,19 +1,70 @@
+/*------ HEADER -----*/
 header {
   margin: auto;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
   display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
 }
 
 #logo {
   width: 80px;
   height: 80px;
-  margin: 15px 20px 0 33%;
+  margin: 15px 20px 10px 0px;
 }
 
 h1 {
   font-family: verdana;
-  font-size: 3em;
 }
+
+/*------ NAV -----*/
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 9.5px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+li {
+  display: inline;
+}
+
+.lienNav {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#home {
+  width: 15px;
+  height: 15px;
+}
+
+
+
+#lienHome {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+li a:hover {
+  background-color: rgba(196, 10, 10, 0.8);
+}
+
 
 /*------ BODY -----*/
 body {
@@ -21,13 +72,116 @@ body {
     margin: auto;
     font-family: sans-serif;
     background-image: url("img/fond.png");
-    display: flex;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+
 }
 
-#containerPaires {
+#container {
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
+}
+
+#menu {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 15px;
+}
+
+.itemMenu {
+  margin-bottom: 20px;
+  border-top: solid 1px;
+  border-left: solid 1px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.nomAttribut {
+  color: rgb(196, 10, 10);
+  font-family: verdana;
+  font-weight: bold;
+  text-align: center;
+}
+
+.attribut {
+  margin-left: 15px;
+}
+/* --affichage des paires-- */
+#containerPaires {
+  border-radius: 10px;
+  display: flex;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.6);
+  width: 90%;
+  padding: 10px;
+  justify-content: center;
+}
+
+#containerPaires img {
+  width: 80%;
+}
+
+.paires {
+  margin: 10px;
+  width: 29%;
+  min-width: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.paires img {
+  margin-top: 8%;
+  border-radius: 5px;
+}
+
+.lienref {
+  font-family: sans-serif;
+  color: white;
+}
+
+.paires p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.lienref:hover {
+  color: rgb(196, 10, 10);
+}
+
+.prix {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*------ FOOTER -----*/
+footer {
+    text-align: right;
+    position: relative;
+}
+
+#admin {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 10%;
+  right: 9.5%;
+  font-size: 0.8em;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+a#admin:link {
+  text-decoration: none;
+}
+
+a#admin:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
 }
