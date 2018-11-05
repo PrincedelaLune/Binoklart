@@ -1,19 +1,25 @@
 /*------ HEADER -----*/
 header {
   margin: auto;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
   display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
 }
 
 #logo {
   width: 80px;
   height: 80px;
-  margin: 15px 20px 0 33%;
+  margin: 15px 20px 10px 0px;
 }
 
 h1 {
   font-family: verdana;
-  font-size: 3em;
 }
 
 /*------ BODY -----*/
@@ -22,6 +28,7 @@ body {
     margin: auto;
     font-family: sans-serif;
     background-image: url("img/fond.png");
+    background-attachment: fixed;
 }
 
 #container {
@@ -71,6 +78,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   color: black;
+  border-radius: 10px;
 }
 
 a.liencat:link {

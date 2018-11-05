@@ -75,116 +75,94 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
-
+    justify-content: center;
 }
 
 #container {
   padding-left: 5%;
-  padding-right: 5%;
   display: flex;
+  width: 90%;
+  padding-right: 5%;
 }
 
-#partieDroite {
+#infos {
+  width: 90%;
+}
+
+#image {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  width: 60%;
+  max-width: 400px;
+  min-width: 200px;
+  height: 60%;
+  margin-right: 20px;
+}
+
+#image img {
   width: 100%;
 }
 
-#menu {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-  margin-right: 20px;
-  padding: 15px;
-  width: 20%;
-  min-width: 120px;
-  max-width: 180px;
-}
-
-.itemMenu {
-  margin-bottom: 20px;
-  border-top: solid 1px;
-  border-left: solid 1px;
-  border-radius: 5px;
-  padding-bottom: 10px;
-}
-
-.nomAttribut {
-  color: rgb(196, 10, 10);
-  font-family: verdana;
-  font-weight: bold;
-  text-align: center;
-}
-
-.attribut {
-  margin-left: 15px;
-}
-/* --affichage des paires-- */
-#entetePaires {
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
+#infos {
   align-items: center;
+}
+
+#ref {
+  border-radius: 10px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 20px;
+}
+
+#dispo {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#dispo img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 h2 {
   font-family: verdana;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 2.5em;
   color: rgb(196, 10, 10);
-  margin-left: 3%;
+  margin: 0;
 }
 
-#entetePaires select {
-  width: 20%;
+#modèle {
+  ont-family: verdana;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
 }
 
-#containerPaires {
+#prix {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 5px;
+}
+
+#description {
   border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.6);
   padding: 10px;
-  justify-content: center;
+  padding-left: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-#containerPaires img {
-  width: 80%;
-}
-
-.paires {
-  margin: 10px;
-  width: 29%;
-  min-width: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  border-radius: 10px;
-}
-
-.paires img {
-  margin-top: 8%;
-  border-radius: 5px;
-}
-
-.lienref {
-  font-family: sans-serif;
-  color: white;
-}
-
-.paires p {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.lienref:hover {
-  color: rgb(196, 10, 10);
-}
-
-.prix {
-  font-family: sans-serif;
-  font-weight: lighter;
-  color: rgba(255, 255, 255, 0.7);
+#description p {
+  margin-left: 20px;
 }
 
 

@@ -65,38 +65,32 @@ li a:hover {
   background-color: rgba(196, 10, 10, 0.8);
 }
 
+
 /*------ BODY -----*/
-body {
-    width: 100%;
-    margin: auto;
-    font-family: sans-serif;
-    background-image: url("img/fond.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
-}
 
-#alignement{
+#alignement {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
-#login {
+.paire {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  text-align: center;
-  width: 30%;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
 }
 
-#login label {
-  font-family: verdana;
-  font-size: 1.5em;
+.num {
+  font-weight: bold;
+  font-size: 1em;
 }
 
-#login input {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 70%;
-  height: 30px;
+#boutons {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
 }
