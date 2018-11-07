@@ -6,69 +6,85 @@
   </head>
 
   <header>
-    <img id="logo" src ="img/logo.png" aalt="logo"/>
-    <h1>Binokl'ART</h1>
+    <div>
+      <img id="logo" src ="img/logo.png" aalt="logo"/>
+      <h1>Binokl'ART</h1>
+    </div>
   </header>
 
+  <nav>
+    <ul>
+      <li><a class="lienNav" id="lienHome" href="" alt="Accueil"><img id="home" src="img/home.png" alt="home"/></a></li>
+      <li><a class="lienNav" href="" alt="Solaires">LUNETTES DE SOLEIL</a></li>
+      <li><a class="lienNav" href="" alt="Optiques">LUNETTES DE VUE</a></li>
+    </ul>
+  </nav>
+
   <body>
-
-    <div id="containerPaires">
-  <!-- code d'apparition d'une paire html------------------------------------------->
-
     <div id="container">
-  <!-- code d'apparition d'une paire-------------------------------------------
-      <div class="paires">
-        <img src ="img/paires/44.png" alt="logo"/>
-        <a class="lienref"><p>La référence</p></a>
+      <div id="menu">
+        <div class="itemMenu">
+          <p class="nomAttribut">Genre</p>
+            <input class="attribut" type="checkbox" name="genre" value="homme"> Homme<br>
+            <input class="attribut" type="checkbox" name="genre" value="femme"> Femme<br>
+        </div>
+        <div class="itemMenu">
+          <p class="nomAttribut">Forme</p>
+            <input class="attribut" type="checkbox" name="forme" value="ronde"> Ronde<br>
+            <input class="attribut" type="checkbox" name="forme" value="ovale"> Ovale<br>
+            <input class="attribut" type="checkbox" name="forme" value="rectangle"> Rectangle<br>
+            <input class="attribut" type="checkbox" name="forme" value="aviateur"> Aviateur<br>
+        </div>
+        <div class="itemMenu">
+          <p class="nomAttribut">Mati&egrave;re</p>
+            <input class="attribut" type="checkbox" name="matiere" value="plastique"> Plastique<br>
+            <input class="attribut" type="checkbox" name="matiere" value="metal"> M&eacute;tal<br>
+        </div>
+        <div class="itemMenu">
+          <p class="nomAttribut">Couleur</p>
+            <input class="attribut" type="checkbox" name="couleur" value="noir"> Noir<br>
+            <input class="attribut" type="checkbox" name="couleur" value="marron"> Marron<br>
+        </div>
+        <div class="itemMenu">
+          <p class="nomAttribut">Herv&eacute;</p>
+            <input class="attribut" type="checkbox" name="herve" value="oui"> Approuv&eacute; par Herv&eacute;<br>
+        </div>
       </div>
-
-  <!-- code d'apparition d'une paire------------------------------------------->
-      <?php
-
-        foreach ($lunettes as $key => $value) {
-          echo "<div class=\"paires\">
-                  <img src =\"img/paires/".$value->numero."png\" alt=".$value->modele."/>
-                  <a class=\"lienref\"><p>".$value->modele."</p></a>
-                </div>\n\n";
-        }
-
-      ?>
-    </div>
-    <div id="menu">
-      <p class="nomAttribut">Genre</p><br>
-        <input class="attribut" type="checkbox" name="genre" value="homme"> Homme<br>
-        <input class="attribut" type="checkbox" name="genre" value="femme"> Femme<br>
-
-      <p class="nomAttribut">Forme</p><br>
-        <input class="attribut" type="checkbox" name="forme" value="ronde"> Ronde<br>
-        <input class="attribut" type="checkbox" name="forme" value="ovale"> Ovale<br>
-        <input class="attribut" type="checkbox" name="forme" value="rectangle"> Rectangle<br>
-        <input class="attribut" type="checkbox" name="forme" value="aviateur"> Aviateur<br>
-
-      <p class="nomAttribut">Matière</p><br>
-        <input class="attribut" type="checkbox" name="matiere" value="plastique"> Plastique<br>
-        <input class="attribut" type="checkbox" name="matiere" value="metal"> Métal<br>
-
-      <p class="nomAttribut">Couleur</p><br>
-        <input class="attribut" type="checkbox" name="couleur" value="plastique"> Plastique<br>
-        <input class="attribut" type="checkbox" name="couleur" value="metal"> Métal<br>
-
-      <p class="nomAttribut">Hervé</p><br>
-        <input class="attribut" type="checkbox" name="herve" value="oui"> Approuvé par Hervé<br>
-  -- code d'apparition d'une paire------------------------------------------->
-  <?php
-
-    foreach ($lunettes as $value) {
-      echo "<div class=\"paires\">
-              <img src =\"img/paires/".$value->numero."png\" alt=".$value->modele."/>
-              <a class=\"lienref\"><p>".$value->modele."</p></a>
-            </div>\n\n";
-    }
+      <div id="partieDroite">
+        <div id="entetePaires">
+          <h2>LUNETTES DE SOLEIL</h2>
+          <select>
+            <option value="rien">Trier par</option>
+            <option value="prix1">Prix - le moins cher</option>
+            <option value="prix2">Prix - le plus cher</option>
+            <option value="nom1">Nom - A-Z</option>
+            <option value="nom2">Nom - Z-A</option>
+          </select>
+        </div>
+        <div id="containerPaires">
+      <!-- code d'apparition d'une paire html
+      
+          <div class="paires">
+            <img src="img/paires/44.jpg" alt="logo"/>
+            <a class="lienref"><p>Carrera - 113/S 003HD</p></a>
+            <p class="prix">139&#128;</p>
+          </div>
+      -->
+          <?php foreach ($produits as $lunette) { ?>
+            <div class="paires">
+              <img src="<?=$lunette->numero?>.jpg" alt="logo"/>
+              <a class="lienref"><p><?=$lunette->nom?></p></a>
+              <p class="prix"><?=$lunette->prix?>&#128;</p>
+            </div>
+          <?php } ?>
+        </div>
+      </div>
     </div>
   </body>
 
   <footer>
-    <a href="lesite.fr/optiques" title="optiques"><p>Optiques</p></a>
-    <a href="lesite.fr/solaires" title="solaires"><p>Solaires</p></a>
+    <p> </p>
+    <a id="admin" href="lesite.fr/admin" title="admin"><p>ADMIN</p></a>
   </footer>
+
 </html>

@@ -42,7 +42,7 @@
 
           $sql="SELECT * FROM lunette WHERE ref=$ref";
           $lunette=$this->db->query($sql);
-          $res[]=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+          $res[]=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');// ???
           for ($i=1; $i <$n ; $i++) {
           $sql="SELECT * FROM lunette WHERE ref=$ref";
           $lunette=$this->db->query($sql);
@@ -50,5 +50,19 @@
           }
           return $res;
       }
+
+      function getArts($n, $genre, $forme, $mat, $couleur, $herv) {
+      //n : nbarticles
+      //genre : tabnleau avec 'homme' et/ou 'femme'
+      //forme : tableau avec les formes selectionnées
+      //mat : tableau avec les matieres selectionnées
+      //couleur : tableau avec les couleurs selectionnées
+      //herve : oui/non
+        $sql="SELECT * FROM lunette LIMIT $n";
+        $lunette=$this->db->query($sql);
+        $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+        return $res;
+      }
+
     }
     ?>
