@@ -16,17 +16,17 @@
     <div id="container">
 
       <div class="divacc" id="solaire">
-        <a class="liencat" href="../controler/vueProduits.ctrl.php?c='solaires'" title="solaires">
+        <a class="liencat" href="../controler/vueProduits.ctrl.php?c=Solaire" title="solaires">
           <p>SOLAIRES</p>
         </a>
-        <img class="imgacc" src="../view/img/solaire.jpg" alt="vour les lunettes solaires">
+        <img class="imgacc" src="../view/img/solaire.jpg" alt="voir les lunettes solaires">
       </div>
 
       <div class="divacc" id="optique">
-        <a class="liencat" href="../controler/vueProduits.ctrl.php?c='optique'" title="optiques">
+        <a class="liencat" href="../controler/vueProduits.ctrl.php?c=Optique" title="optiques">
           <p>OPTIQUES</p>
         </a>
-        <img class="imgacc" src="../view/img/optique.jpg" alt="vour les lunettes optiques">
+        <img class="imgacc" src="../view/img/optique.jpg" alt="voir les lunettes optiques">
       </div>
 
       <div class="divacc" id="toutes">

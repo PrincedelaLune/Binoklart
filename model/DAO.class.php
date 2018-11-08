@@ -51,7 +51,7 @@
           return $res[0];
       }
 
-      function getArts($n, $genre, $forme, $mat, $couleur, $herv, $style) {
+      function getArts(/*$n,*/ $genre, $forme, $mat, $couleur, $herv, $style) {
       //n : nbarticles
       //genre : tableau avec 'homme' et/ou 'femme'
       //forme : tableau avec les formes selectionnées
@@ -92,8 +92,8 @@
         }
 
         if ($herv!=NULL)
-          $SQherv = "( herve = true )";
-
+          $SQherv = "( herve = 1 )";
+//------
         $sql="SELECT * FROM lunette where style='$style' ";
         if (isset($SQmat)) {
           $sql.=$SQmat;
@@ -111,7 +111,7 @@
           $sql.=" and ".$SQcouleur;
         }
 
-        $sql.=" and numero<=$n LIMIT 9";
+        //$sql.=" and numero<=$n LIMIT 9";
         var_dump($sql);
         $lunette=$this->db->query($sql);
         var_dump($lunette);

@@ -2,21 +2,21 @@
 <html lang="fr">
   <head>
     <title>Binokl'ART - <?=$produit[0]->style?></title>
-    <link rel="stylesheet" type="text/css" media="screen" href="vueProduits.style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../view/vueProduits.style.css" />
   </head>
 
   <header>
     <div>
-      <img id="logo" src ="img/logo.png" aalt="logo"/>
+      <img id="logo" src ="../view/img/logo.png" aalt="logo"/>
       <h1>Binokl'ART</h1>
     </div>
   </header>
 
   <nav>
     <ul>
-      <li><a class="lienNav" id="lienHome" href="../view/accueil.view.php" alt="Accueil"><img id="home" src="img/home.png" alt="home"/></a></li>
-      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c='solaire'" alt="Solaires">LUNETTES DE SOLEIL</a></li>
-      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c='optique'" alt="Optiques">LUNETTES DE VUE</a></li>
+      <li><a class="lienNav" id="lienHome" href="../view/accueil.view.php" alt="Accueil"><img id="home" src="../view/img/home.png" alt="home"/></a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c=Solaire" alt="Solaires">LUNETTES DE SOLEIL</a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c=Optique" alt="Optiques">LUNETTES DE VUE</a></li>
     </ul>
   </nav>
 
@@ -83,8 +83,8 @@
       -->
           <?php foreach ($produits as $lunette) { ?>
             <div class="paires">
-              <img src="<?=$lunette->numero?>.jpg" alt="logo"/>
-              <a class="lienref" href="../controler/vuePaire.ctrl.php?n=<?=$lunette->numero?>"><p><?=$lunette->nom?></p></a>
+              <img src="../view/img/paires/<?=$lunette->numero?>.jpg" alt="logo"/>
+              <a class="lienref" href="../controler/vuePaire.ctrl.php?n=<?=$lunette->numero?>"><p><?=$lunette->marque?> - <?=$lunette->modele?></p></a>
               <p class="prix"><?=$lunette->prix?>&#128;</p>
             </div>
           <?php } ?>
@@ -95,7 +95,7 @@
 
   <footer>
     <p> </p>
-    <a id="admin" href="lesite.fr/admin" title="admin"><p>ADMIN</p></a>
+    <a id="admin" href="../view/login-admin.view.php" title="admin"><p>ADMIN</p></a>
   </footer>
 
 </html>

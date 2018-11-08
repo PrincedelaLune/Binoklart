@@ -14,7 +14,7 @@
 14|Chanel|Lunettes Pilote|F|Optique|Aviateur|Noir|Plastique|303|1|0
 15|Chanel|Lunettes Papillon|F|Optique|Rectangle|Noir|Plastique|304|1|0
 16|Tom Ford|Keith|F|Solaire|Ovale|Argent|Metal|405|1|0
-17|Tom Ford|Alissa|F|Optique|Aviateur|Noir|Plastique|445|1|0
+17|Tom Ford|Alissa|F|Solaire|Aviateur|Noir|Plastique|445|1|0
 18|Tom Ford|Karina|F|Solaire|Rectangle|Noir|Plastique|445|1|0
 19|Tom Ford|Ian|X|Solaire|Ovale|Noir|Plastique|380|1|0
 20|Tom Ford|Bachardy|X|Solaire|Aviateur|Marron|Plastique|455|1|0
