@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Binokl'ART - Solaires</title>
+    <title>Binokl'ART - <?=$produit[0]->style?></title>
     <link rel="stylesheet" type="text/css" media="screen" href="vueProduits.style.css" />
   </head>
 
@@ -14,9 +14,9 @@
 
   <nav>
     <ul>
-      <li><a class="lienNav" id="lienHome" href="" alt="Accueil"><img id="home" src="img/home.png" alt="home"/></a></li>
-      <li><a class="lienNav" href="" alt="Solaires">LUNETTES DE SOLEIL</a></li>
-      <li><a class="lienNav" href="" alt="Optiques">LUNETTES DE VUE</a></li>
+      <li><a class="lienNav" id="lienHome" href="../view/accueil.view.php" alt="Accueil"><img id="home" src="img/home.png" alt="home"/></a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c='solaire'" alt="Solaires">LUNETTES DE SOLEIL</a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c='optique'" alt="Optiques">LUNETTES DE VUE</a></li>
     </ul>
   </nav>
 
@@ -37,17 +37,26 @@
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Mati&egrave;re</p>
-            <input class="attribut" type="checkbox" name="matiere" value="plastique"> Plastique<br>
-            <input class="attribut" type="checkbox" name="matiere" value="metal"> M&eacute;tal<br>
+            <input class="attribut" type="checkbox" name="matiere" value="Plastique"> Plastique<br>
+            <input class="attribut" type="checkbox" name="matiere" value="Métal"> M&eacute;tal<br>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Couleur</p>
-            <input class="attribut" type="checkbox" name="couleur" value="noir"> Noir<br>
-            <input class="attribut" type="checkbox" name="couleur" value="marron"> Marron<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Noir"> Noir<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Marron"> Marron<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Transparent"> Transparent<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Or"> Or<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Argent"> Argent<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Gun"> Gunmetal<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Or/Noir"> Or/Noir<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Bleu"> Bleu<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Gris"> Gris<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Rose"> Rose<br>
+            <input class="attribut" type="checkbox" name="couleur" value="Rouge"> Rouge<br>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Herv&eacute;</p>
-            <input class="attribut" type="checkbox" name="herve" value="oui"> Approuv&eacute; par Herv&eacute;<br>
+            <input class="attribut" type="checkbox" name="Herve" value="oui"> Approuv&eacute; par Herv&eacute;<br>
         </div>
       </div>
       <div id="partieDroite">
