@@ -23,6 +23,6 @@
     }
   }
 
-  include("../view/accueil.view.php")
+  include("../view/login-admin.view.php")
 
  ?>

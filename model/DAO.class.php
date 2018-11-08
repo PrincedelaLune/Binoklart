@@ -44,12 +44,12 @@
           return $res;
       }
 
-      function getPaire($n) {
+      /*function getPaire($n) {
           $sql="SELECT * FROM lunette WHERE numero=$n";
           $lunette=$this->db->query($sql);
           $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
           return $res[0];
-      }
+      }*/
 
       function getArts(/*$n,*/ $genre, $forme, $mat, $couleur, $herv, $style) {
       //n : nbarticles
@@ -134,7 +134,7 @@
     }
 
     function get($id){
-      $sql="SELECT * FROM lunette WHERE id='$numero'";
+      $sql="SELECT * FROM lunette WHERE numero=$id";
       $lunette=$this->db->query($sql);
       $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
       return $res[0];

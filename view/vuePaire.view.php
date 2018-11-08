@@ -2,21 +2,21 @@
 <html lang="fr">
   <head>
     <title>Binokl'ART - <?=$lunette->style?></title>
-    <link rel="stylesheet" type="text/css" media="screen" href="vuePaire.style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../view/vuePaire.style.css" />
   </head>
 
   <header>
     <div>
-      <img id="logo" src ="img/logo.png" aalt="logo"/>
+      <img id="logo" src ="../view/img/logo.png" aalt="logo"/>
       <h1>Binokl'ART</h1>
     </div>
   </header>
 
   <nav>
     <ul>
-      <li><a class="lienNav" id="lienHome" href="../view/accueil.view.php" alt="Accueil"><img id="home" src="img/home.png" alt="home"/></a></li>
-      <li><a class="lienNav" href="" alt="Solaires">LUNETTES DE SOLEIL</a></li>
-      <li><a class="lienNav" href="" alt="Optiques">LUNETTES DE VUE</a></li>
+      <li><a class="lienNav" id="lienHome" href="../view/accueil.view.php" alt="Accueil"><img id="home" src="../view/img/home.png" alt="home"/></a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c=Solaire" alt="Solaires">LUNETTES DE SOLEIL</a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c=Optique" alt="Optiques">LUNETTES DE VUE</a></li>
     </ul>
   </nav>
 
@@ -24,18 +24,22 @@
     <div id="container">
 
       <div id="image">
-        <img src="img/paires/<?=$lunette->numero?>.jpg" alt="image">
+        <img src="../view/img/paires/<?=$lunette->numero?>.jpg" alt="image">
       </div>
 
       <div id="infos">
         <div id="ref">
           <h2><?=$lunette->marque?></h2>
-          <p id="modèle"><?=$lunette->modèle?></p>
+          <p id="modèle"><?=$lunette->modele?></p>
           <p id="prix"><?=$lunette->prix?>&#128;</p>
         </div>
         <div id="dispo">
-          <img src="img/<?=$lunette->dispo?>.png" alt="disponible">
-          <p><?=$lunette->style?></p>
+          <img src="../view/img/<?=$lunette->dispo?>.png" alt="disponible">
+          <?php if ($lunette->dispo == '0') {
+            echo "<p>La paire est momentanément indisponible</p>";
+          } else {
+            echo "<p>Disponible !</p>";
+          }?>
         </div>
       </div>
 
@@ -56,13 +60,13 @@
       <h3>Couleur</h3>
       <p><?=$lunette->couleur?></p>
       <h3>Mat&eacute;riau</h3>
-      <p><?=$lunette->matieriau?></p>
+      <p><?=$lunette->materiau?></p>
     </div>
   </body>
 
   <footer>
     <p> </p>
-    <a id="admin" href="lesite.fr/admin" title="admin"><p>ADMIN</p></a>
+    <a id="admin" href="../view/login-admin.view.php" title="admin"><p>ADMIN</p></a>
   </footer>
 
 </html>
