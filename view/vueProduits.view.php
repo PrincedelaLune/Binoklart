@@ -80,8 +80,10 @@
                 <option value="prix DESC"<?php if ($ordre=="prix DESC")echo'selected=\'selected\''; ?>>Prix - le plus cher</option>
                 <option value="modele"<?php if ($ordre=="modele")echo'selected=\'selected\''; ?>>Nom - A-Z</option>
                 <option value="modele DESC"<?php if ($ordre=="modele DESC")echo'selected=\'selected\''; ?>>Nom - Z-A</option>
+                <?php if ($_GET['c']!="Hervé") {?>
                 <option value="marque"<?php if ($ordre=="marque")echo'selected=\'selected\''; ?>>Marque - A-Z</option>
                 <option value="marque DESC"<?php if ($ordre=="marque DESC")echo'selected=\'selected\''; ?>>Marque - Z-A</option>
+                <?php } ?>
               </select>
               <input type="submit" value="OK">
             <form/>
