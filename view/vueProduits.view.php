@@ -23,8 +23,8 @@
 
   <body>
     <div id="container">
-      <form class="" method="post" action="../controler/vueProduits.ctrl.php?c=<?php echo($_GET['c'])?>">
         <div id="menu">
+        <form class="" method="post" action="../controler/vueProduits.ctrl.php?c=<?php echo($_GET['c'])?>">
           <div class="itemMenu">
             <p class="nomAttribut">Genre</p>
               <input class="attribut" type="checkbox" name="genre[]" id="genreh" value="homme"<?php if(isset($checked['homme']))echo'checked=\'checked\'';?>> <label for="genreh"> Homme<label/><br>
@@ -33,7 +33,7 @@
           <div class="itemMenu">
             <p class="nomAttribut">Forme</p>
               <input class="attribut" type="checkbox" name="forme[]" id="formero" value="Ronde"<?php if(isset($checked['Ronde']))echo'checked=\'checked\'';?>> <label for="formero"> Ronde<label/><br>
-              <?php if ($_GET['c']!="Herv&eacute;") {?>
+              <?php if ($_GET['c']!="Hervé") {?>
               <input class="attribut" type="checkbox" name="forme[]" id="formeov" value="Ovale"<?php if(isset($checked['Ovale']))echo'checked=\'checked\'';?>> <label for="formeov"> Ovale<label/><br>
               <input class="attribut" type="checkbox" name="forme[]" id="formere" value="Rectangle"<?php if(isset($checked['Rectangle']))echo'checked=\'checked\'';?>> <label for="formere"> Rectangle<label/><br>
               <input class="attribut" type="checkbox" name="forme[]" id="formeav" value="Aviateur"<?php if(isset($checked['Aviateur']))echo'checked=\'checked\'';?>> <label for="formeav"> Aviateur<label/><br>
@@ -42,7 +42,7 @@
           <div class="itemMenu">
             <p class="nomAttribut">Mati&egrave;re</p>
               <input class="attribut" type="checkbox" name="matiere[]" id="matierep" value="Plastique"<?php if(isset($checked['Plastique']))echo'checked=\'checked\'';?>> <label for="matierep"> Plastique<label/><br>
-              <input class="attribut" type="checkbox" name="matiere[]" id="matierem" value="Métal"<?php if(isset($checked['Métal']))echo'checked=\'checked\'';?>> <label for="matierem"> M&eacute;tal<label/><br>
+              <input class="attribut" type="checkbox" name="matiere[]" id="matierem" value="Metal"<?php if(isset($checked['Metal']))echo'checked=\'checked\'';?>> <label for="matierem"> M&eacute;tal<label/><br>
           </div>
           <div class="itemMenu">
             <p class="nomAttribut">Couleur</p>
@@ -58,7 +58,7 @@
               <input class="attribut" type="checkbox" name="couleur[]" id="couleurro" value="Rose"<?php if(isset($checked['Rose']))echo'checked=\'checked\'';?>> <label for="couleurro"> Rose<label/><br>
               <input class="attribut" type="checkbox" name="couleur[]" id="couleurru" value="Rouge"<?php if(isset($checked['Rouge']))echo'checked=\'checked\'';?>> <label for="couleurru">Rouge<label/><br>
           </div>
-        <?php if ($_GET['c']!="Herv&eacute;") {?>
+        <?php if ($_GET['c']!="Hervé") {?>
           <div class="itemMenu">
             <p class="nomAttribut">Herv&eacute;</p>
               <input class="attribut" type="checkbox" name="Herve" id="Herve" value="Herve"<?php if(isset($checked['Herve']))echo'checked=\'checked\'';?>> <label for="Herve"> Approuv&eacute; par Herv&eacute;<label/><br>
@@ -67,19 +67,24 @@
           <div>
               <input type="submit" value="Appliquer">
           </div>
+        <form/>
         </div>
         <div id="partieDroite">
           <div id="entetePaires">
             <h2>LUNETTES DE SOLEIL</h2>
             <div #id="leTri">
-              <select>
-                <option value="rien">Trier par</option>
-                <option value="prix1">Prix - le moins cher</option>
-                <option value="prix2">Prix - le plus cher</option>
-                <option value="nom1">Nom - A-Z</option>
-                <option value="nom2">Nom - Z-A</option>
+            <form class="" method="post" action="../controler/vueProduits.ctrl.php?c=<?php echo($_GET['c'])?>">
+              <select name="trier">
+                <option value="rien"<?php if ($ordre=="rien")echo'selected=\'selected\''; ?>>Trier par</option>
+                <option value="prix"<?php if ($ordre=="prix")echo'selected=\'selected\''; ?>>Prix - le moins cher</option>
+                <option value="prix DESC"<?php if ($ordre=="prix DESC")echo'selected=\'selected\''; ?>>Prix - le plus cher</option>
+                <option value="modele"<?php if ($ordre=="modele")echo'selected=\'selected\''; ?>>Nom - A-Z</option>
+                <option value="modele DESC"<?php if ($ordre=="modele DESC")echo'selected=\'selected\''; ?>>Nom - Z-A</option>
+                <option value="marque"<?php if ($ordre=="marque")echo'selected=\'selected\''; ?>>Marque - A-Z</option>
+                <option value="marque DESC"<?php if ($ordre=="marque DESC")echo'selected=\'selected\''; ?>>Marque - Z-A</option>
               </select>
               <input type="submit" value="OK">
+            <form/>
             </div>
           </div>
           <div id="containerPaires">
@@ -101,7 +106,6 @@
             <?php } ?>
           </div>
         </div>
-      </form>
     </div>
   </body>
 

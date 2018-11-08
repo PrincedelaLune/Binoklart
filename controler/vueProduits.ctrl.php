@@ -50,9 +50,15 @@ $checked = array();
     $herve = NULL;
   }
 
+  if (isset($_POST['trier'])) {
+    $ordre = $_POST['trier'];
+  }else {
+    $ordre = NULL;
+  }
+
   $style = $_GET['c'];
 
 //getArts(/*$n,*/ $genre, $forme, $mat, $couleur, $herv, $style)
-  $produits = $lunette->getArts($genre, $forme, $matiere, $couleur, $herve, $style);
+  $produits = $lunette->getArts($genre, $forme, $matiere, $couleur, $herve, $style, $ordre);
   include("../view/vueProduits.view.php");
 ?>
