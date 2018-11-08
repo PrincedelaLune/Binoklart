@@ -50,7 +50,7 @@
           }else{
           echo'<input type="radio" name="disponible'.$lunette->numero.'" value="oui" > Oui<br>';
           echo'<input type="radio" name="disponible'.$lunette->numero.'" value="non" checked="checked"> Non';
-        }?>
+          }?>
         </div>
       </div>
       <?php } ?>
@@ -61,4 +61,11 @@
      </form>
     </div>
   </body>
+
+  <footer>
+    <div id="boutons">
+      <input type="submit" value="Mettre &agrave; jour" />
+      <input id="b2" type="button" value="Ajouter une paire" />
+    </div>
+  </footer>
 </html>

@@ -79,6 +79,7 @@ body {
 #alignement{
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 }
 
 #login {
