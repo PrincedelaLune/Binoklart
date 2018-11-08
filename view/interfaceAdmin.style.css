@@ -67,25 +67,102 @@ li a:hover {
 
 
 /*------ BODY -----*/
+body {
+    width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+    background-image: url("img/fond.png");
+    background-attachment: fixed;
+}
 
 #alignement {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+#enteteInterface {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 14px 30px 10px 14px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+h2 {
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: rgb(196, 10, 10);
+  margin-left: 3%;
 }
 
 .paire {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
+  padding: 14px 30px 10px 14px;
   display: flex;
-  flex-direction: row;
-  padding: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.photo {
+  height: 100%;
+  padding-right: 14px;
+  border-right: solid 1px rgb(196, 10, 10);
+}
+
+.photo img {
+  height: 100%;
+  width: 70px;
+  border-radius: 5px;
+}
+
+.nometref {
+  text-align: center;
+  border-right: solid 1px rgb(196, 10, 10);
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.prix {
+  text-align: center;
+  border-right: solid 1px rgb(196, 10, 10);
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 0.8em;
+}
+
+.dispo {
+  text-align: center;
+  padding-left: 10%;
+  font-size: 0.8em;
 }
 
 .num {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.ref {
+  margin: 0;
+}
+
+h5 {
+  text-decoration: underline;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.prix input {
+  width: 40px;
+}
+
+.prix p {
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 #boutons {
@@ -93,4 +170,13 @@ li a:hover {
   border-radius: 10px;
   display: flex;
   padding: 10px;
+}
+
+#boutons input {
+  width: 200px;
+  font-size: 1.5em;
+}
+
+#b2 {
+  margin-left: 10px;
 }
