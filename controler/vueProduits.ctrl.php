@@ -23,6 +23,10 @@ $checked = array();
     $forme = NULL;
   }
 
+  if ($_GET['c'] == "Hervé") {
+    $checked['Ronde']=1;
+  }
+
   if (isset($_POST['matiere'])){
     $matiere = array();
     for ($i=0; $i < sizeof($_POST['matiere']); $i++) {
