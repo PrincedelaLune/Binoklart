@@ -30,7 +30,7 @@
       </div>
 
       <div class="divacc" id="toutes">
-        <a class="liencat" id="lientoutes" href="../controler/vueProduits.ctrl.php?c='Herv&eacute;'" title="herve">
+        <a class="liencat" id="lientoutes" href="../controler/vueProduits.ctrl.php?c=Herv&eacute;" title="herve">
           <p>APPROUV&Eacute;ES PAR HERV&Eacute;</p>
         </a>
       </div>

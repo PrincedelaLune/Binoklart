@@ -22,15 +22,16 @@
   </nav>
 
   <body>
-  <form method="post" action="../controler/interfaceAdmin.ctrl.php">
     <div id="alignement">
-      <div id="haut">
-        <img id="image" src ="../view/img/modifOk.png" aalt="OK"/>
-        <h2>Modifications effectuées</h2>
+      <div id="contenu">
+        <div id="haut">
+          <img id="image" src ="../view/img/modifOk.png" aalt="OK"/>
+          <h2>Modifications effectuées</h2>
+        </div>
+        <form method="post" action="../view/accueil.view.php">
+          <input id type="submit" value="Retour à l'accueil" />
+       </form>
       </div>
-      <form method="post" action="../view/accueil.view.php">
-        <input id type="submit" value="Retour à l'accueil" />
-     </form>
     </div>
   </body>
 </html>
