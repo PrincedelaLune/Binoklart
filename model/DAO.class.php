@@ -130,6 +130,25 @@
         $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
         return $res;
       }
+      function getlogin(){
+        $sql="SELECT * FROM login";
+        $login=$this->db->query($sql);
+        $res=$login->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'LoginAdmin');
+        return $res[0];
+      }
 
+    function getAllLunettes(){
+      $sql="SELECT * FROM lunette";
+      $formes=$this->db->query($sql);
+      $res=$formes->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+      return $res;
+    }
+
+    function get(int $id){
+      $sql="SELECT * FROM lunette WHERE id='$numero'";
+      $lunette=$this->db->query($sql);
+      $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+      return $res[0];
+    }
     }
     ?>
