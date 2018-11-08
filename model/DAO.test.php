@@ -9,7 +9,13 @@
       // Creation de l'instace DAO
     $lunettes = new DAO();
 
-    $m = $lunettes->firstN(5);
+    $n = 2;
+    $genre = array('0' => 'homme', '1' => 'femme');
+    $forme = array('0' => 'Ronde');
+    $mat = array('0' => 'Plastique');
+    $couleur = NULL;
+    $herv = NULL;
+    $m = $lunettes->getArts($n, $genre, $forme, $mat, $couleur, $herv);
     var_dump($m);
 
     ?>
