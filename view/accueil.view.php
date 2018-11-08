@@ -40,7 +40,7 @@
 
   <footer>
     <p> </p>
-    <a id="admin" href="lesite.fr/admin" title="admin"><p>ADMIN</p></a>
+    <a id="admin" href="../view/login-admin.view.php" title="admin"><p>ADMIN</p></a>
   </footer>
 
 </html>
