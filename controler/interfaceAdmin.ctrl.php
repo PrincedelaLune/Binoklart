@@ -6,6 +6,7 @@
   $lunettes=$db->getAllLunettes();
 
   foreach ($lunettes as $paire){
+    $n=$paire->numero;
     if ($_POST['disponible'.$paire->numero] == "oui"){
       $nouvelleDispo = 1;
     } else {
@@ -16,8 +17,8 @@
       $db->updateDispo($n, $nouvelleDispo);
     }
 
-    $nouveauPrix = $_POST['prix']
-    if($nouveauPrix != "Nv Prix" && $nouveauPrix != $paire->prix ) {
+    $nouveauPrix = $_POST['prix'.$paire->numero];
+    if($nouveauPrix != "" && $nouveauPrix != $paire->prix ) {
       $db->updatePrix($n, $nouveauPrix);
     }
   }

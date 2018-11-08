@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Binokl'ART - Solaires</title>
+    <title>Binokl'ART - Interface Administrateur</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../view/interfaceAdmin.style.css" />
   </head>
 
@@ -39,7 +39,7 @@
         <div class="prix">
           <h5>Prix</h5>
           <p><?php echo $lunette->prix?>&#128;</p>
-          <input type="text" name="prix" value="Nv Prix"/>
+          <?php echo'<input type="text" name="prix'.$lunette->numero.'" placeholder="Nv Prix"/>'?>
         </div>
         <div class="dispo">
           <h5>Disponible</h5>
