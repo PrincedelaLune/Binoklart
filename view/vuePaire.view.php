@@ -14,7 +14,7 @@
 
   <nav>
     <ul>
-      <li><a class="lienNav" id="lienHome" href="" alt="Accueil"><img id="home" src="img/home.png" alt="home"/></a></li>
+      <li><a class="lienNav" id="lienHome" href="../view/accueil.view.php" alt="Accueil"><img id="home" src="img/home.png" alt="home"/></a></li>
       <li><a class="lienNav" href="" alt="Solaires">LUNETTES DE SOLEIL</a></li>
       <li><a class="lienNav" href="" alt="Optiques">LUNETTES DE VUE</a></li>
     </ul>

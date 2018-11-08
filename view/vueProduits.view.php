@@ -59,6 +59,8 @@
           <p class="nomAttribut">Herv&eacute;</p>
             <input class="attribut" type="checkbox" name="Herve" id="Herve" value="oui"> <label for="Herve"> Approuv&eacute; par Herv&eacute;<label/><br>
         </div>
+        <div>
+            <input class="submit" value="Appliquer">
       </form>
       </div>
       <div id="partieDroite">
