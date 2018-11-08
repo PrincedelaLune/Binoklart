@@ -36,7 +36,7 @@
 36|Pepe Jeans|PJ7224 C1|M|Solaire|Rectangle|Noir|Plastique|79|1|0
 37|Marc Jacobs|MARC67/S 05LLA|F|Solaire|Rectangle|Marron|Plastique|119|1|0
 38|Marc Jacobs|MARC162/S 086HA|F|Solaire|Rectangle|Marron|Plastique|199|1|0
-39|Marc Jacobs|MARC168/S GHPIC|F|Solaire|Rectangle|Argent|Metal|179|1|0
+39|Marc Jacobs|MARC168/S GHPIC|F|Solaire|Aviateur|Argent|Metal|179|1|0
 40|Burberry|4265 30017J|F|Solaire|Rectangle|Noir|Plastique|149|1|0
 41|Burberry|4210 35448G|F|Solaire|Rectangle|Transparent|Plastique|139|1|0
 42|Burberry|4197 30018G|F|Solaire|Rectangle|Noir|Metal|159|1|0

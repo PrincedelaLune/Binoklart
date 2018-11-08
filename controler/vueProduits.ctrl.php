@@ -2,11 +2,12 @@
   require_once('../model/DAO.class.php');
   require_once('../model/Lunette.class.php');
   $lunette = new DAO();
-
+$checked = array();
   if (isset($_POST['genre'])){
     $genre = array();
     for ($i=0; $i < sizeof($_POST['genre']); $i++) {
       array_push($genre, $_POST['genre'][$i]);
+      $checked[$_POST['genre'][$i]]=1;
     }
   }else {
     $genre = NULL;
@@ -16,6 +17,7 @@
     $forme = array();
     for ($i=0; $i < sizeof($_POST['forme']); $i++) {
       array_push($forme, $_POST['forme'][$i]);
+      $checked[$_POST['forme'][$i]]=1;
     }
   }else {
     $forme = NULL;
@@ -25,6 +27,7 @@
     $matiere = array();
     for ($i=0; $i < sizeof($_POST['matiere']); $i++) {
       array_push($matiere, $_POST['matiere'][$i]);
+      $checked[$_POST['matiere'][$i]]=1;
     }
   }else {
     $matiere = NULL;
@@ -34,6 +37,7 @@
     $couleur = array();
     for ($i=0; $i < sizeof($_POST['couleur']); $i++) {
       array_push($couleur, $_POST['couleur'][$i]);
+      $checked[$_POST['couleur'][$i]]=1;
     }
   }else {
     $couleur = NULL;
@@ -41,6 +45,7 @@
 
   if (isset($_POST['Herve'])){
     $herve = 1;
+    $checked['Herve']=1;
   }else {
     $herve = NULL;
   }
