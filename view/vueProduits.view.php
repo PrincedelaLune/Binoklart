@@ -32,7 +32,7 @@
           </div>
           <div class="itemMenu">
             <p class="nomAttribut">Forme</p>
-              <input class="attribut" type="checkbox" name="forme[]" id="formero" value="Ronde"<?php if(isset($checked['Ronde']))echo'checked=\'checked\'';?>> <label for="formero"> Ronde<label/><br>
+              <input class="attribut" type="checkbox" name="forme[]" id="formero" value="Ronde"<?php if(isset($checked['Ronde'])||$_GET['c']="Hervé")echo'checked=\'checked\'';?>> <label for="formero"> Ronde<label/><br>
               <?php if ($_GET['c']!="Hervé") {?>
               <input class="attribut" type="checkbox" name="forme[]" id="formeov" value="Ovale"<?php if(isset($checked['Ovale']))echo'checked=\'checked\'';?>> <label for="formeov"> Ovale<label/><br>
               <input class="attribut" type="checkbox" name="forme[]" id="formere" value="Rectangle"<?php if(isset($checked['Rectangle']))echo'checked=\'checked\'';?>> <label for="formere"> Rectangle<label/><br>
