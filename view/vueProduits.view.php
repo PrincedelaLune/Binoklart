@@ -23,6 +23,7 @@
   <body>
     <div id="container">
       <div id="menu">
+      <form class="" method="post" action="../controler/vueProduits.ctrl.php">
         <div class="itemMenu">
           <p class="nomAttribut">Genre</p>
             <input class="attribut" type="checkbox" name="genreh" id="genreh" value="homme"> <label for="genreh"> Homme<label/><br>
@@ -58,6 +59,7 @@
           <p class="nomAttribut">Herv&eacute;</p>
             <input class="attribut" type="checkbox" name="Herve" id="Herve" value="oui"> <label for="Herve"> Approuv&eacute; par Herv&eacute;<label/><br>
         </div>
+      </form>
       </div>
       <div id="partieDroite">
         <div id="entetePaires">
