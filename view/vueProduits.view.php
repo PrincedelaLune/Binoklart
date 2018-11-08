@@ -61,6 +61,7 @@
         </div>
         <div>
             <input class="submit" value="Appliquer">
+        </div>
       </form>
       </div>
       <div id="partieDroite">
