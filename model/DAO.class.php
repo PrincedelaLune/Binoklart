@@ -60,10 +60,15 @@
       //herve : 0/1
 
         if ($genre!=NULL) {
-          if($genre[1]!=NULL){
+          if(isset($genre[1])){
             $SQgenre = "(genre ='X' or genre ='M' or genre ='F')";
           }else{
-            $SQgenre = "(genre ='X' or genre ='".($genre[0]=='femme')?'F':'M'."')";
+            if ($genre[0]=='femme') {
+              $SQgenre = "(genre ='X' or genre ='F')";
+            }else {
+              $SQgenre = "(genre ='X' or genre ='M')";
+            }
+            var_dump($SQgenre);
           }
         }
 
@@ -96,7 +101,7 @@
 //------
         $sql="SELECT * FROM lunette where style='$style' ";
         if (isset($SQmat)) {
-          $sql.=$SQmat;
+          $sql.=" and ".$SQmat;
         }
         if (isset($SQherv)) {
           $sql.=" and ".$SQherv;

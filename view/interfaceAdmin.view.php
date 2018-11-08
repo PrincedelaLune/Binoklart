@@ -15,8 +15,8 @@
   <nav>
     <ul>
       <li><a class="lienNav" id="lienHome" href="../view/accueil.view.php" alt="Accueil"><img id="home" src="../view/img/home.png" alt="home"/></a></li>
-      <li><a class="lienNav" href="../view/vueProduits.view.php" alt="Solaires">LUNETTES DE SOLEIL</a></li>
-      <li><a class="lienNav" href="" alt="Optiques">LUNETTES DE VUE</a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c=Solaire" alt="Solaires">LUNETTES DE SOLEIL</a></li>
+      <li><a class="lienNav" href="../controler/vueProduits.ctrl.php?c=Optique" alt="Optiques">LUNETTES DE VUE</a></li>
     </ul>
   </nav>
 
