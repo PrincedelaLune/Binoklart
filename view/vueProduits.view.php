@@ -73,7 +73,7 @@
           <?php foreach ($produits as $lunette) { ?>
             <div class="paires">
               <img src="<?=$lunette->numero?>.jpg" alt="logo"/>
-              <a class="lienref"><p><?=$lunette->nom?></p></a>
+              <a class="lienref" href="../controler/vuePaire.ctrl.php?n=<?=$lunette->numero?>"><p><?=$lunette->nom?></p></a>
               <p class="prix"><?=$lunette->prix?>&#128;</p>
             </div>
           <?php } ?>
