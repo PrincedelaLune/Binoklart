@@ -51,6 +51,13 @@
           return $res;
       }
 
+      function getPaire($n) {
+          $sql="SELECT * FROM lunette WHERE numero=$n";
+          $lunette=$this->db->query($sql);
+          $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+          return $res[0];
+      }
+
       function getArts($n, $genre, $forme, $mat, $couleur, $herv) {
       //n : nbarticles
       //genre : tableau avec 'homme' et/ou 'femme'
