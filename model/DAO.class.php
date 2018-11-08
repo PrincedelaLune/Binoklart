@@ -141,11 +141,21 @@
       return $res;
     }
 
-    function get(int $id){
+    function get($id){
       $sql="SELECT * FROM lunette WHERE id='$numero'";
       $lunette=$this->db->query($sql);
       $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
       return $res[0];
+    }
+
+    function updateDispo($n, $nouvelleDispo){
+      $sql="UPDATE lunette SET dispo='$nouvelleDispo' WHERE numero=$n";
+      $this->db->query($sql);
+    }
+
+    function updatePrix($n, $nouveauPrix){
+      $sql="UPDATE lunette SET prix='$nouveauPrix' WHERE numero=$n";
+      $this->db->query($sql);
     }
     }
     ?>
