@@ -16,22 +16,22 @@
     <div id="container">
 
       <div class="divacc" id="solaire">
-        <a class="liencat" href="lesite.fr/solaires" title="solaires">
+        <a class="liencat" href="../controler/vueProduits.ctrl.php?c='solaires'" title="solaires">
           <p>SOLAIRES</p>
         </a>
         <img class="imgacc" src="img/solaire.jpg" alt="vour les lunettes solaires">
       </div>
 
       <div class="divacc" id="optique">
-        <a class="liencat" href="lesite.fr/optiques" title="optiques">
+        <a class="liencat" href="../controler/vueProduits.ctrl.php?c='optique'" title="optiques">
           <p>OPTIQUES</p>
         </a>
         <img class="imgacc" src="img/optique.jpg" alt="vour les lunettes optiques">
       </div>
 
       <div class="divacc" id="toutes">
-        <a class="liencat" id="lientoutes" href="lesite.fr/optiques" title="optiques">
-          <p>VOIR TOUTES LES PAIRES</p>
+        <a class="liencat" id="lientoutes" href="../controler/vueProduits.ctrl.php?c='herve'" title="herve">
+          <p>APPROUV&Eacute;ES PAR HERV&Eacute;</p>
         </a>
       </div>
 
