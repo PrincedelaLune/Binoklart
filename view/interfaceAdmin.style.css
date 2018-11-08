@@ -73,6 +73,7 @@ body {
     font-family: sans-serif;
     background-image: url("img/fond.png");
     background-attachment: fixed;
+    margin-bottom: 50px;
 }
 
 #alignement {
@@ -166,15 +167,18 @@ h5 {
 }
 
 #boutons {
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
   display: flex;
   padding: 10px;
+  width: 100%;
+  bottom: 0px;
+  justify-content: center;
 }
 
 #boutons input {
   width: 200px;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #b2 {

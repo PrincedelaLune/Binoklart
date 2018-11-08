@@ -62,10 +62,4 @@
     </div>
   </body>
 
-  <footer>
-    <div id="boutons">
-      <input type="submit" value="Mettre &agrave; jour" />
-      <input id="b2" type="button" value="Ajouter une paire" />
-    </div>
-  </footer>
 </html>

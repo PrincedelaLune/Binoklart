@@ -64,7 +64,7 @@
               <input class="attribut" type="checkbox" name="Herve" id="Herve" value="Herve"<?php if(isset($checked['Herve']))echo'checked=\'checked\'';?>> <label for="Herve"> Approuv&eacute; par Herv&eacute;<label/><br>
           </div>
         <?php } ?>
-          <div>
+          <div id="boutonAppliquer">
               <input type="submit" value="Appliquer">
           </div>
         <form/>
@@ -72,8 +72,8 @@
         <div id="partieDroite">
           <div id="entetePaires">
             <h2>LUNETTES DE SOLEIL</h2>
-            <div #id="leTri">
-            <form class="" method="post" action="../controler/vueProduits.ctrl.php?c=<?php echo($_GET['c'])?>">
+            <div id="leTri">
+            <form method="post" action="../controler/vueProduits.ctrl.php?c=<?php echo($_GET['c'])?>">
               <select name="trier">
                 <option value="rien"<?php if ($ordre=="rien")echo'selected=\'selected\''; ?>>Trier par</option>
                 <option value="prix"<?php if ($ordre=="prix")echo'selected=\'selected\''; ?>>Prix - le moins cher</option>
@@ -86,7 +86,7 @@
                 <?php } ?>
               </select>
               <input type="submit" value="OK">
-            <form/>
+            </form>
             </div>
           </div>
           <div id="containerPaires">
