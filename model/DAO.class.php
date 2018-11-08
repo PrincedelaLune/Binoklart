@@ -51,14 +51,14 @@
           return $res[0];
       }*/
 
-      function getArts(/*$n,*/ $genre, $forme, $mat, $couleur, $herv, $style) {
+      function getArts(/*$n,*/ $genre, $forme, $mat, $couleur, $herv, $style, $ordre) {
       //n : nbarticles
       //genre : tableau avec 'homme' et/ou 'femme'
       //forme : tableau avec les formes selectionnées
       //mat : tableau avec les matieres selectionnées
       //couleur : tableau avec les couleurs selectionnées
       //herve : 0/1
-      if ($style=="Herv&eacute;") {
+      if ($style=="Hervé") {
         $herv = 1;
         $style = "Optique";
       }
@@ -71,7 +71,7 @@
             }else {
               $SQgenre = "(genre ='X' or genre ='M')";
             }
-            var_dump($SQgenre);
+            //var_dump($SQgenre);
           }
         }
 
@@ -119,7 +119,12 @@
           $sql.=" and ".$SQcouleur;
         }
 
-        //$sql.=" and numero<=$n LIMIT 9";
+        if ($ordre!=NULL){
+          if ($ordre!="rien") {
+            $sql.=" ORDER BY $ordre ";
+          }
+        }
+
         //var_dump($sql);
         $lunette=$this->db->query($sql);
         //var_dump($lunette);
