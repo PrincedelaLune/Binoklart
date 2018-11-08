@@ -30,10 +30,10 @@
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Forme</p>
-            <input class="attribut" type="checkbox" name="forme" value="ronde"> Ronde<br>
-            <input class="attribut" type="checkbox" name="forme" value="ovale"> Ovale<br>
-            <input class="attribut" type="checkbox" name="forme" value="rectangle"> Rectangle<br>
-            <input class="attribut" type="checkbox" name="forme" value="aviateur"> Aviateur<br>
+            <input class="attribut" type="checkbox" name="forme" value="Ronde"> Ronde<br>
+            <input class="attribut" type="checkbox" name="forme" value="Ovale"> Ovale<br>
+            <input class="attribut" type="checkbox" name="forme" value="Rectangle"> Rectangle<br>
+            <input class="attribut" type="checkbox" name="forme" value="Aviateur"> Aviateur<br>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Mati&egrave;re</p>
@@ -63,7 +63,7 @@
         </div>
         <div id="containerPaires">
       <!-- code d'apparition d'une paire html
-      
+
           <div class="paires">
             <img src="img/paires/44.jpg" alt="logo"/>
             <a class="lienref"><p>Carrera - 113/S 003HD</p></a>

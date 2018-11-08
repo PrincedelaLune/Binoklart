@@ -1,11 +1,11 @@
-1|Ray-Ban|Aviator|X|Solaire|4|Or|Métal|149
+1|Ray-Ban|Aviator|X|Solaire|4|Or|Metal|149
 2|Ray-Ban|Wayfarer|X|Vue|2|Noir|Plastique|149
 3|Ray-Ban|Erika|X|Solaire|3|Marron|Plastique|129
-4|Ray-Ban|Round|X|Vue|1|Argent|Métal|149
+4|Ray-Ban|Round|X|Vue|1|Argent|Metal|149
 5|Ray-Ban|ClubMaster|X|Solaire|2|Marron|Plastique|149
-6|Chanel|Lunettes Pilote|F|Solaire|4|Noir|Métal|950
+6|Chanel|Lunettes Pilote|F|Solaire|4|Noir|Metal|950
 7|Chanel|Lunettes Masque|F|Solaire|2|Noir|Plastique|600
-8|Chanel|Lunettes Rondes|F|Solaire|3|Or|Métal|1200
+8|Chanel|Lunettes Rondes|F|Solaire|3|Or|Metal|1200
 9|Chanel|Lunettes Œil de Chat|F|Solaire|3|Or/Noir|Plastique|400
 10|Chanel|Lunettes Papillons|F|Solaire|2|Rose|Plastique|340
 11|Chanel|Lunettes Carrées|F|Vue|2|Transparent|Plastique|300
@@ -13,22 +13,22 @@
 13|Chanel|Lunettes Rondes|F|Vue|3|Marron|Plastique|302
 14|Chanel|Lunettes Pilote|F|Vue|4|Noir|Plastique|303
 15|Chanel|Lunettes Papillon|F|Vue|2|Noir|Plastique|304
-16|Tom Ford|Keith|F|Solaire|3|Argent|Métal|405
+16|Tom Ford|Keith|F|Solaire|3|Argent|Metal|405
 17|Tom Ford|Alissa|F|Vue|4|Noir|Plastique|445
 18|Tom Ford|Karina|F|Solaire|2|Noir|Plastique|445
 19|Tom Ford|Ian|X|Solaire|3|Noir|Plastique|380
 20|Tom Ford|Bachardy|X|Solaire|4|Marron|Plastique|455
 21|Tom Ford|Soft rounded optical frame with magnetic clip|X|Vue|3|Or|Metal|720
 22|Tom Ford|Blue Block bridge |X|Vue|2|Bleu|Plastique|415
-23|Polo Ralph Lauren|PH1179|M|Vue|3|Gun|Métal|155
+23|Polo Ralph Lauren|PH1179|M|Vue|3|Gun|Metal|155
 24|Le Coq Sportif|LCS2010 107 |M|Vue|3|Bleu|Plastique|149
 25|Le Coq Sportif|LCS2011 022|M|Vue|2|Noir|Plastique|149
 26|Le Coq Sportif|LCS2007 001|M|Vue|2|Noir|Plastique|149
 27|Le Coq Sportif|LCS2007 135|M|Vue|2|Marron|Plastique|149
-28|Le Coq Sportif|LCS2008|M|Vue|1|Rouge|Métal|149
-29|Police|VPL564F|M|Vue|2|Bleu|Métal|169
-30|Police|VPL465 0K53|M|Vue|2|Gris|Métal|169
-31|Police|VPL438 531|M|Vue|2|Noir|Métal|149
+28|Le Coq Sportif|LCS2008|M|Vue|1|Rouge|Metal|149
+29|Police|VPL564F|M|Vue|2|Bleu|Metal|169
+30|Police|VPL465 0K53|M|Vue|2|Gris|Metal|169
+31|Police|VPL438 531|M|Vue|2|Noir|Metal|149
 32|Pepe Jeans|PJ7285 C1|M|Solaire|3|Noir|Plastique|79
 33|Pepe Jeans|PJ7260 C1|M|Solaire|2|Noir|Plastique|69
 34|Pepe Jeans|PJ7260 C3|M|Solaire|2|Gris|Plastique|69
@@ -36,15 +36,15 @@
 36|Pepe Jeans|PJ7224 C1|M|Solaire|2|Noir|Plastique|79
 37|Marc Jacobs|MARC67/S 05LLA|F|Solaire|2|Marron|Plastique|119
 38|Marc Jacobs|MARC162/S 086HA|F|Solaire|2|Marron|Plastique|199
-39|Marc Jacobs|MARC168/S GHPIC|F|Solaire|2|Argent|Métal|179
+39|Marc Jacobs|MARC168/S GHPIC|F|Solaire|2|Argent|Metal|179
 40|Burberry|4265 30017J|F|Solaire|2|Noir|Plastique|149
 41|Burberry|4210 35448G|F|Solaire|2|Transparent|Plastique|139
-42|Burberry|4197 30018G|F|Solaire|2|Noir|Métal|159
+42|Burberry|4197 30018G|F|Solaire|2|Noir|Metal|159
 43|D&G|DG 4304 502/13 |F|Solaire|2|Marron|Plastique|185
-44|Carrera|113/S 003HD|M|Solaire|3|Noir|Métal|129
-45|Carrera|115/S 003HD|M|Solaire|3|Noir|Métal|129
-46|Carrera|118/SL2LNR|M|Solaire|4|Marron|Métal|119
-47|Carrera|5022 S|M|Solaire|1|Gris|Métal|135
-48|Carrera|5023 S|M|Solaire|2|Gris|Métal|135
+44|Carrera|113/S 003HD|M|Solaire|3|Noir|Metal|129
+45|Carrera|115/S 003HD|M|Solaire|3|Noir|Metal|129
+46|Carrera|118/SL2LNR|M|Solaire|4|Marron|Metal|119
+47|Carrera|5022 S|M|Solaire|1|Gris|Metal|135
+48|Carrera|5023 S|M|Solaire|2|Gris|Metal|135
 49|Carrera|5036/S D28NR|M|Solaire|1|Noir|Plastique|90
-50|Carrera|97S|M|Solaire|4|Marron|Métal|119
+50|Carrera|97S|M|Solaire|4|Marron|Metal|119
