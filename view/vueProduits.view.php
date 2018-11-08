@@ -68,13 +68,16 @@
       <div id="partieDroite">
         <div id="entetePaires">
           <h2>LUNETTES DE SOLEIL</h2>
-          <select>
-            <option value="rien">Trier par</option>
-            <option value="prix1">Prix - le moins cher</option>
-            <option value="prix2">Prix - le plus cher</option>
-            <option value="nom1">Nom - A-Z</option>
-            <option value="nom2">Nom - Z-A</option>
-          </select>
+          <div #id="letri">
+            <select>
+              <option value="rien">Trier par</option>
+              <option value="prix1">Prix - le moins cher</option>
+              <option value="prix2">Prix - le plus cher</option>
+              <option value="nom1">Nom - A-Z</option>
+              <option value="nom2">Nom - Z-A</option>
+            </select>
+            <input type="submit" value="Appliquer">
+          </div>
         </div>
         <div id="containerPaires">
       <!-- code type d'apparition d'une paire html
