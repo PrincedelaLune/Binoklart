@@ -57,14 +57,14 @@
       //forme : tableau avec les formes selectionnées
       //mat : tableau avec les matieres selectionnées
       //couleur : tableau avec les couleurs selectionnées
-      //herve : oui/non
-        /*if (isset($genre[0]) && isset($genre[1])){
-          if ($genre[0]=='femme'&&$genre[1]=='homme'||$genre[1]=='femme'&&$genre[0]=='homme')
-            $SQgenre = "(genre = 'X' or genre = 'M' or genre='F')";
+      //herve : 0/1
 
-        }else*/
         if ($genre!=NULL) {
-          // code...
+          if($genre[1]!=NULL){
+            $SQgenre = "genre ='X' or genre ='M' or genre ='F'";
+          }else{
+            $SQgenre = "genre ='X' or genre ='".($genre[0]=='femme')?'F':'M'."'";
+          }
         }
 
         if($forme!=NULL){
