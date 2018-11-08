@@ -112,9 +112,9 @@
         }
 
         //$sql.=" and numero<=$n LIMIT 9";
-        var_dump($sql);
+        //var_dump($sql);
         $lunette=$this->db->query($sql);
-        var_dump($lunette);
+        //var_dump($lunette);
         $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
         return $res;
       }
