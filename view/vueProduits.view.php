@@ -26,34 +26,34 @@
       <form class="" method="post" action="../controler/vueProduits.ctrl.php">
         <div class="itemMenu">
           <p class="nomAttribut">Genre</p>
-            <input class="attribut" type="checkbox" name="genreh" id="genreh" value="homme"> <label for="genreh"> Homme<label/><br>
-            <input class="attribut" type="checkbox" name="genref" id="genref" value="femme"> <label for="genref"> Femme<label/><br>
+            <input class="attribut" type="checkbox" name="genre[]" id="genreh" value="homme"> <label for="genreh"> Homme<label/><br>
+            <input class="attribut" type="checkbox" name="genre[]" id="genref" value="femme"> <label for="genref"> Femme<label/><br>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Forme</p>
-            <input class="attribut" type="checkbox" name="formero" id="formero" value="Ronde"> <label for="formero"> Ronde<label/><br>
-            <input class="attribut" type="checkbox" name="formeov" id="formeov" value="Ovale"> <label for="formeov"> Ovale<label/><br>
-            <input class="attribut" type="checkbox" name="formere" id="formere" value="Rectangle"> <label for="formere"> Rectangle<label/><br>
-            <input class="attribut" type="checkbox" name="formeav" id="formeav" value="Aviateur"> <label for="formeav"> Aviateur<label/><br>
+            <input class="attribut" type="checkbox" name="forme[]" id="formero" value="Ronde"> <label for="formero"> Ronde<label/><br>
+            <input class="attribut" type="checkbox" name="forme[]" id="formeov" value="Ovale"> <label for="formeov"> Ovale<label/><br>
+            <input class="attribut" type="checkbox" name="forme[]" id="formere" value="Rectangle"> <label for="formere"> Rectangle<label/><br>
+            <input class="attribut" type="checkbox" name="forme[]" id="formeav" value="Aviateur"> <label for="formeav"> Aviateur<label/><br>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Mati&egrave;re</p>
-            <input class="attribut" type="checkbox" name="matierep" id="matierep" value="Plastique"> <label for="matierep"> Plastique<label/><br>
-            <input class="attribut" type="checkbox" name="matierem" id="matierem" value="Métal"> <label for="matierem"> M&eacute;tal<label/><br>
+            <input class="attribut" type="checkbox" name="matiere[]" id="matierep" value="Plastique"> <label for="matierep"> Plastique<label/><br>
+            <input class="attribut" type="checkbox" name="matiere[]" id="matierem" value="Métal"> <label for="matierem"> M&eacute;tal<label/><br>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Couleur</p>
-            <input class="attribut" type="checkbox" name="couleurno" id="couleurno" value="Noir"> <label for="couleurno"> Noir<label/><br>
-            <input class="attribut" type="checkbox" name="couleurma" id="couleurma" value="Marron"> <label for="couleurma">Marron<label/><br>
-            <input class="attribut" type="checkbox" name="couleurtr" id="couleurtr" value="Transparent"> <label for="couleurtr"> Transparent<label/><br>
-            <input class="attribut" type="checkbox" name="couleuror" id="couleuror" value="Or"> <label for="couleuror"> Or<label/><br>
-            <input class="attribut" type="checkbox" name="couleurar" id="couleurar" value="Argent"> <label for="couleurar"> Argent<label/><br>
-            <input class="attribut" type="checkbox" name="couleurgu" id="couleurgu" value="Gun"> <label for="couleurgu"> Gunmetal<label/><br>
-            <input class="attribut" type="checkbox" name="couleuron" id="couleuron" value="Or/Noir"> <label for="couleuron"> Or/Noir<label/><br>
-            <input class="attribut" type="checkbox" name="couleurbl" id="couleurbl" value="Bleu"> <label for="couleurbl"> Bleu<label/><br>
-            <input class="attribut" type="checkbox" name="couleurgr" id="couleurgr" value="Gris"> <label for="couleurgr"> Gris<label/><br>
-            <input class="attribut" type="checkbox" name="couleurro" id="couleurro" value="Rose"> <label for="couleurro"> Rose<label/><br>
-            <input class="attribut" type="checkbox" name="couleurru" id="couleurru" value="Rouge"> <label for="couleurru">Rouge<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurno" value="Noir"> <label for="couleurno"> Noir<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurma" value="Marron"> <label for="couleurma">Marron<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurtr" value="Transparent"> <label for="couleurtr"> Transparent<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleuror" value="Or"> <label for="couleuror"> Or<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurar" value="Argent"> <label for="couleurar"> Argent<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurgu" value="Gun"> <label for="couleurgu"> Gunmetal<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleuron" value="Or/Noir"> <label for="couleuron"> Or/Noir<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurbl" value="Bleu"> <label for="couleurbl"> Bleu<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurgr" value="Gris"> <label for="couleurgr"> Gris<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurro" value="Rose"> <label for="couleurro"> Rose<label/><br>
+            <input class="attribut" type="checkbox" name="couleur[]" id="couleurru" value="Rouge"> <label for="couleurru">Rouge<label/><br>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Herv&eacute;</p>

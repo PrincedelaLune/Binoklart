@@ -51,7 +51,7 @@
           return $res[0];
       }
 
-      function getArts($n, $genre, $forme, $mat, $couleur, $herv) {
+      function getArts($n, $genre, $forme, $mat, $couleur, $herv, $style) {
       //n : nbarticles
       //genre : tableau avec 'homme' et/ou 'femme'
       //forme : tableau avec les formes selectionnées
@@ -94,31 +94,23 @@
         if ($herv!=NULL)
           $SQherv = "( herve = true )";
 
-        $sql="SELECT * FROM lunette";
-        if ($SQmat!=NULL||$SQherv!=NULL||$SQforme!=NULL||$SQgenre!=NULL||$SQcouleur!=NULL){
-          $sql.=" WHERE ";
-          $b = false;//conditions multiples ?
-          if (isset($SQmat)) {
-            $sql.=$SQmat;
-            $b=true;
-          }
-          if (isset($SQherv)) {
-            $sql.=($b)?" and ".$SQherv:$SQherv;
-            $b = true;
-          }
-          if (isset($SQforme)) {
-            $sql.=($b)?" and ".$SQforme:$SQforme;
-            $b = true;
-          }
-          if (isset($SQgenre)) {
-            $sql.=($b)?" and ".$SQgenre:$SQgenre;
-            $b = true;
-          }
-          if (isset($SQcouleur)) {
-            $sql.=($b)?" and ".$SQcouleur:$SQcouleur;
-            $b = true;
-          }
+        $sql="SELECT * FROM lunette where style='$style' ";
+        if (isset($SQmat)) {
+          $sql.=$SQmat;
         }
+        if (isset($SQherv)) {
+          $sql.=" and ".$SQherv;
+        }
+        if (isset($SQforme)) {
+          $sql.=" and ".$SQforme;
+        }
+        if (isset($SQgenre)) {
+          $sql.=" and ".$SQgenre;
+        }
+        if (isset($SQcouleur)) {
+          $sql.=" and ".$SQcouleur;
+        }
+
         $sql.=" and numero<=$n LIMIT 9";
         var_dump($sql);
         $lunette=$this->db->query($sql);
