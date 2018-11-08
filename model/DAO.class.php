@@ -61,35 +61,38 @@
 
         if ($genre!=NULL) {
           if($genre[1]!=NULL){
-            $SQgenre = "genre ='X' or genre ='M' or genre ='F'";
+            $SQgenre = "(genre ='X' or genre ='M' or genre ='F')";
           }else{
-            $SQgenre = "genre ='X' or genre ='".($genre[0]=='femme')?'F':'M'."'";
+            $SQgenre = "(genre ='X' or genre ='".($genre[0]=='femme')?'F':'M'."')";
           }
         }
 
         if($forme!=NULL){
-          $SQforme = "forme = '".$forme[0]."'";
+          $SQforme = "(forme = '".$forme[0]."'";
           for ($i = 1; $i < sizeof($forme); $i++) {
             $SQforme .= " or forme = '".$forme[$i]."'";
           }
+          $SQforme.=")";
         }
 
         if($mat!=NULL){
-          $SQmat = "materiau = '".$mat[0]."'";
+          $SQmat = "(materiau = '".$mat[0]."'";
           for ($i = 1; $i < sizeof($mat); $i++) {
             $SQmat .= " or materiau = '".$mat[$i]."'";
           }
+          $SQmat.=")";
         }
 
         if($couleur!=NULL){
-          $SQcouleur = "couleur = '".$couleur[0]."'";
+          $SQcouleur = "(couleur = '".$couleur[0]."'";
           for ($i = 1; $i < sizeof($couleur); $i++) {
             $SQcouleur .= " or couleur = '".$couleur[$i]."'";
           }
+          $SQcouleur.=")";
         }
 
         if ($herv!=NULL)
-          $SQherv = " herve = true ";
+          $SQherv = "( herve = true )";
 
         $sql="SELECT * FROM lunette";
         if ($SQmat!=NULL||$SQherv!=NULL||$SQforme!=NULL||$SQgenre!=NULL||$SQcouleur!=NULL){
@@ -116,7 +119,7 @@
             $b = true;
           }
         }
-        $sql.=" LIMIT $n";
+        $sql.=" and numero<=$n LIMIT 9";
         var_dump($sql);
         $lunette=$this->db->query($sql);
         var_dump($lunette);
