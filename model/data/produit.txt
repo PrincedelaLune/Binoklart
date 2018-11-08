@@ -49,7 +49,7 @@
 49|Carrera|5036/S D28NR|M|Solaire|1|Noir|Plastique|90|1|0
 50|Carrera|97S|M|Solaire|4|Marron|Metal|119|1|0
 51|Anne&Valentin|M1|X|Optique|1|Rouge|Metal|119|1|1
-52|Anne&Valentin|M2|Optique|1|Or|Metal|119|1|1
+52|Anne&Valentin|M2|X|Optique|1|Or|Metal|119|1|1
 53|Anne&Valentin|M3|X|Optique|1|Bleu|Metal|119|1|1
 54|Anne&Valentin|M4|X|Optique|1|Bleu|Metal|119|1|1
 55|Anne&Valentin|M5|X|Optique|1|Noir|Metal|119|1|1

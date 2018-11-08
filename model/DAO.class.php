@@ -1,7 +1,7 @@
 <?php
 
     require_once("Lunette.class.php");
-    require_once("Forme.class.php");
+
 
     // Definition de l'unique objet de DAO
     $dao = new DAO();
@@ -22,13 +22,6 @@
           }catch(PDOEXCEPTION $e){
               var_dump($e);
           }
-        }
-
-        function getAllForme() {
-            $sql="SELECT * FROM forme";
-            $formes=$this->db->query($sql);
-            $res=$formes->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Forme');
-            return $res;
         }
 
       function firstN($n) {
@@ -130,6 +123,7 @@
         $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
         return $res;
       }
+
       function getlogin(){
         $sql="SELECT * FROM login";
         $login=$this->db->query($sql);

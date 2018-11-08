@@ -1,4 +1,0 @@
-1|Ronde
-2|Rectangle
-3|Ovale
-4|Aviateur
