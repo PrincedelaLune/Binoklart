@@ -21,11 +21,12 @@
   </nav>
 
   <body>
-
+  <form method="post" action="../controler/interfaceAdmin.ctrl.php">
     <div id="alignement">
       <div id="enteteInterface">
         <h2>Tableau de bord</h2>
       </div>
+
       <?php foreach($list as $lunette){?>
       <div class="paire">
         <div class="photo">
@@ -56,6 +57,7 @@
         <input type="submit" value="Mettre &agrave; jour" />
         <input id="b2" type="button" value="Ajouter une paire" />
       </div>
+     </form>
     </div>
   </body>
 </html>

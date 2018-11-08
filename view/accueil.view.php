@@ -2,12 +2,12 @@
 <html lang="fr">
   <head>
     <title>Binokl'ART</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="accueil.style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../view/accueil.style.css" />
   </head>
 
   <header>
     <div>
-      <img id="logo" src ="img/logo.png" aalt="logo"/>
+      <img id="logo" src ="../view/img/logo.png" aalt="logo"/>
       <h1>Binokl'ART</h1>
     </div>
   </header>
@@ -19,14 +19,14 @@
         <a class="liencat" href="../controler/vueProduits.ctrl.php?c='solaires'" title="solaires">
           <p>SOLAIRES</p>
         </a>
-        <img class="imgacc" src="img/solaire.jpg" alt="vour les lunettes solaires">
+        <img class="imgacc" src="../view/img/solaire.jpg" alt="vour les lunettes solaires">
       </div>
 
       <div class="divacc" id="optique">
         <a class="liencat" href="../controler/vueProduits.ctrl.php?c='optique'" title="optiques">
           <p>OPTIQUES</p>
         </a>
-        <img class="imgacc" src="img/optique.jpg" alt="vour les lunettes optiques">
+        <img class="imgacc" src="../view/img/optique.jpg" alt="vour les lunettes optiques">
       </div>
 
       <div class="divacc" id="toutes">
