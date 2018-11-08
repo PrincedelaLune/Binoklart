@@ -90,6 +90,27 @@ a.liencat:hover {
   color: white;
 }
 
+.liencat2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+  border-radius: 10px;
+}
+
+a.liencat2:link {
+  text-decoration: none;
+}
+
+a.liencat2:hover {
+  background-color: rgba(196, 10, 10, 0.8);
+  color: white;
+}
+
 #lientoutes {
   top: 25%;
   left: 39%;
