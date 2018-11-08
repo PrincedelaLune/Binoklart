@@ -55,6 +55,13 @@
           return $res;
       }
 
+      function getPaire($n) {
+          $sql="SELECT * FROM lunette WHERE numero=$n";
+          $lunette=$this->db->query($sql);
+          $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+          return $res[0];
+      }
+
       function getArts($n, $genre, $forme, $mat, $couleur, $herv) {
       //n : nbarticles
       //genre : tableau avec 'homme' et/ou 'femme'
@@ -67,37 +74,39 @@
             $SQgenre = "(genre = 'X' or genre = 'M' or genre='F')";
 
         }else*/
-        if (isset($genre[0]) && !isset($genre[1])) {
-          $SQgenre = ($genre[0]=='femme')?"genre = 'F' or genre = 'X'":($genre[0]=='homme')?"genre = 'M' or genre = 'X'":"genre = 'X'";
+        if ($genre!=NULL) {
+          // code...
         }
 
-        if(isset($forme)){
-          $SQforme = "forme = '".$forme[0];
+        if($forme!=NULL){
+          $SQforme = "forme = '".$forme[0]."'";
+
           for ($i = 1; $i < sizeof($forme); $i++) {
             $SQforme .= " or forme = '".$forme[$i]."'";
           }
         }
 
-        if(isset($mat)){
-          $SQmat = "meteriau = '".$mat[0];
-          for ($$i = 1; $i < sizeof($mat); $i++) {
-            $SQmat .= " or materiau = '".$mat[i]."'";
+        if($mat!=NULL){
+          $SQmat = "materiau = '".$mat[0]."'";
+          for ($i = 1; $i < sizeof($mat); $i++) {
+            $SQmat .= " or materiau = '".$mat[$i]."'";
           }
         }
 
-        if(isset($couleur)){
-          $SQcouleur = "couleur = '".$couleur[0];
+        if($couleur!=NULL){
+          $SQcouleur = "couleur = '".$couleur[0]."'";
+
           for ($i = 1; $i < sizeof($couleur); $i++) {
             $SQcouleur .= " or couleur = '".$couleur[$i]."'";
           }
         }
 
-        if (isset($herv))
-          $SQherv = "herve = true";
+        if ($herv!=NULL)
+          $SQherv = " herve = true ";
+        $sql="SELECT * FROM lunette";
+        if ($SQmat!=NULL||$SQherv!=NULL||$SQforme!=NULL||$SQgenre!=NULL||$SQcouleur!=NULL){
+          $sql.=" WHERE ";
 
-        $sql="SELECT * FROM lunette LIMIT $n";
-        if (isset($SQmat)||isset($SQherv)||isset($SQforme)||isset($SQgenre)||isset($SQcouleur)){
-          $sql.=" where ";
           $b = false;//conditions multiples ?
           if (isset($SQmat)) {
             $sql.=$SQmat;
@@ -120,7 +129,10 @@
             $b = true;
           }
         }
+        $sql.=" LIMIT $n";
+        var_dump($sql);
         $lunette=$this->db->query($sql);
+        var_dump($lunette);
         $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
         return $res;
       }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Binokl'ART - Solaires</title>
+    <title>Binokl'ART - <?=$lunette->style?></title>
     <link rel="stylesheet" type="text/css" media="screen" href="vuePaire.style.css" />
   </head>
 
@@ -24,33 +24,39 @@
     <div id="container">
 
       <div id="image">
-        <img src="img/paires/5.jpg" alt="disponible">
+        <img src="img/paires/<?=$lunette->numero?>.jpg" alt="image">
       </div>
 
       <div id="infos">
         <div id="ref">
-          <h2>Ray-Ban</h2>
-          <p id="modèle">Clubmaster</p>
-          <p id="prix">149&#128;</p>
+          <h2><?=$lunette->marque?></h2>
+          <p id="modèle"><?=$lunette->modèle?></p>
+          <p id="prix"><?=$lunette->prix?>&#128;</p>
         </div>
         <div id="dispo">
-          <img src="img/oui.png" alt="disponible">
-          <p>Disponible pour un retrait en magasin</p>
+          <img src="img/<?=$lunette->dispo?>.png" alt="disponible">
+          <p><?=$lunette->style?></p>
         </div>
       </div>
 
     </div>
     <div id="description">
       <h3>Genre</h3>
-      <p>Mixte</p>
+      <?php if ($lunette->genre == 'M') {
+        echo "<p>Masculin</p>";
+      } elseif ($lunette->genre == 'F'){
+        echo "<p>F&eacute;minin</p>";
+      } else {
+        echo "<p>Mixte</p>";
+      }?>
       <h3>Type</h3>
-      <p>Solaire</p>
+      <p><?=$lunette->style?></p>
       <h3>Forme</h3>
-      <p>Rectangle</p>
+      <p><?=$lunette->forme?></p>
       <h3>Couleur</h3>
-      <p>Marron</p>
+      <p><?=$lunette->couleur?></p>
       <h3>Mat&eacute;riau</h3>
-      <p>Plastique</p>
+      <p><?=$lunette->matieriau?></p>
     </div>
   </body>
 
