@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Binokl'ART - <?php echo($produits[0]->style); ?></title>
+    <title>Binokl'ART - <?php echo($_GET['c']) ?></title>
     <link rel="stylesheet" type="text/css" media="screen" href="../view/vueProduits.style.css" />
   </head>
 
@@ -33,9 +33,11 @@
         <div class="itemMenu">
           <p class="nomAttribut">Forme</p>
             <input class="attribut" type="checkbox" name="forme[]" id="formero" value="Ronde"<?php if(isset($checked['Ronde']))echo'checked=\'checked\'';?>> <label for="formero"> Ronde<label/><br>
+            <?php if ($_GET['c']!="Herv&eacute;") {?>
             <input class="attribut" type="checkbox" name="forme[]" id="formeov" value="Ovale"<?php if(isset($checked['Ovale']))echo'checked=\'checked\'';?>> <label for="formeov"> Ovale<label/><br>
             <input class="attribut" type="checkbox" name="forme[]" id="formere" value="Rectangle"<?php if(isset($checked['Rectangle']))echo'checked=\'checked\'';?>> <label for="formere"> Rectangle<label/><br>
             <input class="attribut" type="checkbox" name="forme[]" id="formeav" value="Aviateur"<?php if(isset($checked['Aviateur']))echo'checked=\'checked\'';?>> <label for="formeav"> Aviateur<label/><br>
+            <?php } ?>
         </div>
         <div class="itemMenu">
           <p class="nomAttribut">Mati&egrave;re</p>
@@ -56,10 +58,12 @@
             <input class="attribut" type="checkbox" name="couleur[]" id="couleurro" value="Rose"<?php if(isset($checked['Rose']))echo'checked=\'checked\'';?>> <label for="couleurro"> Rose<label/><br>
             <input class="attribut" type="checkbox" name="couleur[]" id="couleurru" value="Rouge"<?php if(isset($checked['Rouge']))echo'checked=\'checked\'';?>> <label for="couleurru">Rouge<label/><br>
         </div>
+      <?php if ($_GET['c']!="Herv&eacute;") {?>
         <div class="itemMenu">
           <p class="nomAttribut">Herv&eacute;</p>
             <input class="attribut" type="checkbox" name="Herve" id="Herve" value="Herve"<?php if(isset($checked['Herve']))echo'checked=\'checked\'';?>> <label for="Herve"> Approuv&eacute; par Herv&eacute;<label/><br>
         </div>
+      <?php } ?>
         <div>
             <input type="submit" value="Appliquer">
         </div>

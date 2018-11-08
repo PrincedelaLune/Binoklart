@@ -58,7 +58,10 @@
       //mat : tableau avec les matieres selectionnées
       //couleur : tableau avec les couleurs selectionnées
       //herve : 0/1
-
+      if ($style=="Herv&eacute;") {
+        $herv = 1;
+        $style = "Optique";
+      }
         if ($genre!=NULL) {
           if(isset($genre[1])){
             $SQgenre = "(genre ='X' or genre ='M' or genre ='F')";
