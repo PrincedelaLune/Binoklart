@@ -13,5 +13,17 @@
         public $prix;
     }
 
-
+/*
+Argent
+Bleu
+Gris
+Gun
+Marron
+Noir
+Or
+Or/Noir
+Rose
+Rouge
+Transparent
+*/
 ?>
