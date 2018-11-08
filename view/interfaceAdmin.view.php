@@ -42,8 +42,13 @@
         </div>
         <div class="dispo">
           <h5>Disponible</h5>
-          <input type="radio" name="disponible" value="oui" checked> Oui<br>
-          <input type="radio" name="disponible" value="non" checked> Non
+          <?php if($lunette->dispo){
+          echo'<input type="radio" name="disponible'.$lunette->numero.'" value="oui" checked="checked"> Oui<br>';
+          echo'<input type="radio" name="disponible'.$lunette->numero.'" value="non"> Non';
+          }else{
+          echo'<input type="radio" name="disponible'.$lunette->numero.'" value="oui" > Oui<br>';
+          echo'<input type="radio" name="disponible'.$lunette->numero.'" value="non" checked="checked"> Non';
+        }?>
         </div>
       </div>
       <?php } ?>
@@ -53,5 +58,4 @@
       </div>
     </div>
   </body>
-
 </html>
