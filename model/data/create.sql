@@ -9,6 +9,8 @@ CREATE TABLE lunette
   couleur STRING,
   materiau STRING,
   prix INTEGER,
+  dispo BOOLEAN,
+  herve BOOLEAN,
   FOREIGN KEY(forme) REFERENCES forme(id)
 );
 
@@ -33,6 +35,8 @@ drop table login;
 
 .separator |
 .import produit.txt lunette
+.separator |
+.import forme.txt forme
 .separator |
 .import forme.txt forme
 

@@ -11,6 +11,8 @@
         public $couleur;
         public $materiau;
         public $prix;
+        public $dispo;
+        public $herve;
     }
 
 /*

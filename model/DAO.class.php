@@ -2,6 +2,8 @@
 
     require_once("Lunette.class.php");
     require_once("Forme.class.php");
+    require_once("LoginAdmin.class.php");
+
 
     // Definition de l'unique objet de DAO
     $dao = new DAO();
@@ -31,12 +33,14 @@
             return $res;
         }
 
+
       function firstN($n) {
           $sql="SELECT * FROM lunette LIMIT $n";
           $lunette=$this->db->query($sql);
           $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
           return $res;
       }
+
 
       function getN($ref,$n) {
 
@@ -68,30 +72,30 @@
         }
 
         if(isset($forme)){
-          $SQforme = "forme = '".$forme[0]
-          for (i = 1; i < sizeof($forme); i++) {
-            $SQforme .= " or forme = '".$forme[i]."'";
+          $SQforme = "forme = '".$forme[0];
+          for ($i = 1; $i < sizeof($forme); $i++) {
+            $SQforme .= " or forme = '".$forme[$i]."'";
           }
         }
 
         if(isset($mat)){
-          $SQmat = "meteriau = '".$mat[0]
-          for (i = 1; i < sizeof($mat); i++) {
+          $SQmat = "meteriau = '".$mat[0];
+          for ($$i = 1; $i < sizeof($mat); $i++) {
             $SQmat .= " or materiau = '".$mat[i]."'";
           }
         }
 
         if(isset($couleur)){
-          $SQcouleur = "couleur = '".$couleur[0]
-          for (i = 1; i < sizeof($couleur); i++) {
-            $SQcouleur .= " or couleur = '".$couleur[i]."'";
+          $SQcouleur = "couleur = '".$couleur[0];
+          for ($i = 1; $i < sizeof($couleur); $i++) {
+            $SQcouleur .= " or couleur = '".$couleur[$i]."'";
           }
         }
 
         if (isset($herv))
           $SQherv = "herve = true";
 
-        $sql="SELECT * FROM lunette LIMIT $n"
+        $sql="SELECT * FROM lunette LIMIT $n";
         if (isset($SQmat)||isset($SQherv)||isset($SQforme)||isset($SQgenre)||isset($SQcouleur)){
           $sql.=" where ";
           $b = false;//conditions multiples ?
@@ -121,5 +125,25 @@
         return $res;
       }
 
+      function getlogin(){
+        $sql="SELECT * FROM login";
+        $login=$this->db->query($sql);
+        $res=$login->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'LoginAdmin');
+        return $res[0];
+      }
+
+    function getAllLunettes(){
+      $sql="SELECT * FROM lunette";
+      $formes=$this->db->query($sql);
+      $res=$formes->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+      return $res;
     }
+
+    function get(int $id){
+      $sql="SELECT * FROM lunette WHERE id='$numero'";
+      $lunette=$this->db->query($sql);
+      $res=$lunette->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE,'Lunette');
+      return $res[0];
+    }
+  }
     ?>

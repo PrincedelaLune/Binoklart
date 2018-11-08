@@ -9,7 +9,7 @@
       // Creation de l'instace DAO
     $lunettes = new DAO();
 
-    $m = $lunettes->firstN(5);
+    $m = $lunettes->getlogin();
     var_dump($m);
 
     ?>
