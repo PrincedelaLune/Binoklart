@@ -32,7 +32,7 @@
             <br>
             <input id type="submit" value="Envoyer" />
             <?php if (isset($mauvaislog)) {
-              echo"<br/>Login ou Mot de passe incorrecte";
+              echo"<br/><p id=incorrect>Login ou mot de passe incorrect</p>";
             } ?>
         </form>
       </div>
