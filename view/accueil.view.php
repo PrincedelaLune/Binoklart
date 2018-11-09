@@ -30,6 +30,7 @@
       </div>
 
       <div class="divacc" id="toutes">
+        <img id="imgHerve" href="../view/img/herve.png" alt="herve">
         <a class="liencat" id="lientoutes" href="../controler/vueProduits.ctrl.php?c=Herv&eacute;" title="herve">
           <p>APPROUV&Eacute;ES PAR HERV&Eacute;</p>
         </a>
@@ -39,7 +40,7 @@
   </body>
 
   <footer>
-    <p> </p>
+    <p>Binokl'Art<br>127 Rue Blanchon<br>38000<br>Grenoble</p>
     <a id="admin" href="../view/login-admin.view.php" title="admin"><p>ADMIN</p></a>
   </footer>
 
