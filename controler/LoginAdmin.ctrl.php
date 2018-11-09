@@ -10,6 +10,9 @@
   $list = $bd->getAllLunettes();
   if ($pseudo==$login->login && $pass==$login->motdp) {
     include("../view/interfaceAdmin.view.php");
+  }else {
+    $mauvaislog = 1;
+    include("../view/login-admin.view.php");
   }
 
 ?>

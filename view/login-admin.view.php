@@ -2,12 +2,12 @@
 <html lang="fr">
   <head>
     <title>Binokl'ART - Solaires</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="login-admin.style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../view/login-admin.style.css" />
   </head>
 
   <header>
     <div>
-      <img id="logo" src ="img/logo.png" aalt="logo"/>
+      <img id="logo" src ="../view/img/logo.png" aalt="logo"/>
       <h1>Binokl'ART</h1>
     </div>
   </header>
@@ -31,6 +31,9 @@
             <label for="pass">Mot de passe</label> <br> <input type="password" name="pass" id="pass"/>
             <br>
             <input id type="submit" value="Envoyer" />
+            <?php if (isset($mauvaislog)) {
+              echo"<br/>Login ou Mot de passe incorrecte";
+            } ?>
         </form>
       </div>
     </div>
