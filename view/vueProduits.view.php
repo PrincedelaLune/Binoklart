@@ -71,7 +71,11 @@
         </div>
         <div id="partieDroite">
           <div id="entetePaires">
-            <h2>LUNETTES DE SOLEIL</h2>
+            <?php if ($_GET['c']!="Hervé") {
+                    echo("<h2>LUNETTES DE ".strtoupper($_GET['c'])."<h2>");
+                  }else {?>
+                    <h2>LUNETTES DE HERV&Eacute;<h2>
+             <?php }?>
             <div id="leTri">
             <form method="post" action="../controler/vueProduits.ctrl.php?c=<?php echo($_GET['c'])?>">
               <select name="trier">
