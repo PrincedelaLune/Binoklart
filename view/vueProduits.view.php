@@ -7,7 +7,11 @@
 
   <header>
     <div>
+      <?php if ($_GET['c']!="Hervé") {?>
       <img id="logo" src ="../view/img/logo.png" alt="logo"/>
+      <?php } else {?>
+      <img id="logo" src ="../view/img/herve.png" alt="logo"/>
+      <?php }?>
       <h1>Binokl'ART</h1>
     </div>
   </header>

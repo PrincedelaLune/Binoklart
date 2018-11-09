@@ -59,6 +59,14 @@ body {
   width: 100%;
   margin: 1% 5% 1% 4%;
   background-color: rgba(196, 10, 10, 0.8);
+  display: flex;
+  align-items: center;
+}
+
+#imgHerve{
+  width: auto;
+  height: 90%;
+  margin-left: 10%;
 }
 
 .imgacc {
@@ -123,14 +131,14 @@ a#lientoutes:hover {
 
 /*------ FOOTER -----*/
 footer {
-    text-align: right;
+    text-align: left;
     position: relative;
 }
 
 #admin {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 10%;
+  bottom: 0px;
   right: 9.5%;
   font-size: 0.8em;
   color: white;
@@ -146,4 +154,8 @@ a#admin:link {
 a#admin:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
+}
+
+#adresse {
+  margin-left: 8.5%;
 }
