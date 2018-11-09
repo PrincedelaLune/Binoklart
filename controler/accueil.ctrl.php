@@ -1,4 +1,4 @@
 <?php
-  
-  include("../view/accueil.php")
+
+  include("../view/accueil.view.php")
 ?>
