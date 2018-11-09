@@ -5,13 +5,12 @@ CREATE TABLE lunette
   modele STRING,
   genre CHARACTER,
   style STRING,
-  forme INTEGER,
+  forme STRING,
   couleur STRING,
   materiau STRING,
   prix INTEGER,
   dispo BOOLEAN,
   herve BOOLEAN,
-  FOREIGN KEY(forme) REFERENCES forme(id)
 );
 
 CREATE TABLE login
